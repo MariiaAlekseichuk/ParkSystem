@@ -1,0 +1,48 @@
+ноя 12, 2015 8:33:34 PM org.apache.catalina.startup.Catalina stopServer
+SEVERE: Could not contact localhost:8005. Tomcat may not be running.
+ноя 12, 2015 8:33:34 PM org.apache.catalina.startup.Catalina stopServer
+SEVERE: Catalina.stop: 
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:343)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+
+ноя 12, 2015 9:52:45 PM org.apache.catalina.startup.Catalina stopServer
+SEVERE: Could not contact localhost:8005. Tomcat may not be running.
+ноя 12, 2015 9:52:45 PM org.apache.catalina.startup.Catalina stopServer
+SEVERE: Catalina.stop: 
+java.net.ConnectException: Connection refused: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at java.net.Socket.<init>(Unknown Source)
+	at org.apache.catalina.startup.Catalina.stopServer(Catalina.java:498)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.apache.catalina.startup.Bootstrap.stopServer(Bootstrap.java:343)
+	at org.apache.catalina.startup.Bootstrap.main(Bootstrap.java:430)
+
