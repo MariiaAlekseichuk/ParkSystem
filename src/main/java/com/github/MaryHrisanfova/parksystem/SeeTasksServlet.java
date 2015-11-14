@@ -11,55 +11,44 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
-import static com.github.MaryHrisanfova.parksystem.User.*;
 
 import static com.github.MaryHrisanfova.parksystem.DBConnection.getConnection;
 
 /**
- * Created by Маша on 12.11.2015.
+ * Created by Маша on 14.11.2015.
  */
-@WebServlet(urlPatterns = "/users")
-public class SeeUsersServlet extends HttpServlet {
+@WebServlet(urlPatterns = "/tasks")
+public class SeeTasksServlet extends HttpServlet {
 
     private Connection connection;
-    // private DataSource datasource;
     private Statement statement;
     private ServletConfig config;
 
-    public void init(ServletConfig config) throws ServletException {
-
-    }
-
-    /*
-        private Connection getConnection() throws SQLException {
-            return datasource.getConnection();
-        }
-    */
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException {
-        // Connection connection=null;
         try {
             connection = getConnection();
-
         } catch (NamingException e) {
             e.printStackTrace();
         } catch (SQLException e) {
             e.printStackTrace();
         }
-       // List usersList = new ArrayList();
-       // List emaiList = new ArrayList();
 
-    List <User> users=new ArrayList<User>();
+
+        List <Task> tasks=new ArrayList<Task>();
         try {
-            String query = "SELECT id,firstname,lastname,email,groupid FROM users ORDER BY firstname";
+            String query = "SELECT sender.lastname, sender.firstname, tasks.tasktype,  tasks.tasktext,recipient.lastname, recipient.firstname,tasks.isdone, tasks.isconfirmed \n" +
+                    "FROM tasks \n" +
+                    " INNER JOIN users AS sender\n" +
+                    " INNER JOIN users AS recipient\n" +
+                    " ON sender.id=tasks.id_sender AND recipient.id=tasks.id_recipient";
             PreparedStatement preparedStatment = null;
             preparedStatment = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatment.executeQuery();
 
-
-
-            while (resultSet.next()) {
-                users.add(new User(resultSet.getInt(1),resultSet.getString(2),resultSet.getString(3),resultSet.getString(4),resultSet.getInt(5)));
+                while (resultSet.next()) {
+                tasks.add(new Task(resultSet.getString(1),resultSet.getString(2),resultSet.getString(3),resultSet.getString(4),resultSet.getString(5),resultSet.getString(6), resultSet.getBoolean(7), resultSet.getBoolean(8)));
+                System.out.println(resultSet.getBoolean(6));
                /* int id = resultSet.getInt(1);
                 String email = resultSet.getString(2);
                 System.out.println(id);
@@ -74,11 +63,11 @@ public class SeeUsersServlet extends HttpServlet {
         } catch (SQLException e) {
 
         }
-       // req.setAttribute("userList", usersList);
-    req.setAttribute("users", users);
+        // req.setAttribute("userList", usersList);
+        req.setAttribute("tasks", tasks);
 
         try {
-            req.getRequestDispatcher("users.jsp").forward(req, res);
+            req.getRequestDispatcher("tasks.jsp").forward(req, res);
         } catch (IOException e) {
 
         }

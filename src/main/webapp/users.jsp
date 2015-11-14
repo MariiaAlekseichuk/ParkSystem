@@ -16,16 +16,16 @@
 </head>
 <body>
 <%--= request.getAttribute("userList") --%>
-<table class="item-table">
+<table border="1">
   <tr>
-    <th>Name</th>
+    <th>Users</th>
   </tr>
-  <c:forEach items="${userList}" var="userList">
+  <c:forEach items="${users}" var="user">
     <tr>
-      <td><c:out value='${userList}' />
+      <td><c:out value='${user}' />
       </td>
     </tr>
-  </c:forEach>
+      </c:forEach>
 </table>
 
 </body>
