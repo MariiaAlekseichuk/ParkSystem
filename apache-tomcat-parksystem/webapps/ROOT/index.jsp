@@ -13,7 +13,7 @@
 
     <input type="submit"value="Enter"/>
 </form>
-<form action="addNewUser.jsp">
+<form action="/addnewuser">
     <input type="submit" value="Registration" />
 </form>
 </body>

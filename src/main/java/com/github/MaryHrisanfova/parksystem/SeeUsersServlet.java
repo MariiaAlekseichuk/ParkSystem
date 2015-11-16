@@ -11,6 +11,7 @@ import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+
 import static com.github.MaryHrisanfova.parksystem.User.*;
 
 import static com.github.MaryHrisanfova.parksystem.DBConnection.getConnection;
@@ -37,7 +38,6 @@ public class SeeUsersServlet extends HttpServlet {
     */
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException {
-        // Connection connection=null;
         try {
             connection = getConnection();
 
@@ -46,39 +46,19 @@ public class SeeUsersServlet extends HttpServlet {
         } catch (SQLException e) {
             e.printStackTrace();
         }
-       // List usersList = new ArrayList();
-       // List emaiList = new ArrayList();
-
-    List <User> users=new ArrayList<User>();
-        try {
-            String query = "SELECT login,password,firstname,lastname,email,groupid FROM users ORDER BY firstname";
-            PreparedStatement preparedStatment = connection.prepareStatement(query);
-            ResultSet resultSet = preparedStatment.executeQuery();
 
 
+        List<User> users = new ArrayList<User>();
+        UserDAO dao = new UserDAO();
+        users = dao.getAllUser(users);
 
-            while (resultSet.next()) {
-                users.add(new User(resultSet.getString(1),resultSet.getString(2),resultSet.getString(3),resultSet.getString(4), resultSet.getString(5)));
-               /* int id = resultSet.getInt(1);
-                String email = resultSet.getString(2);
-                System.out.println(id);
-                System.out.println(email);
-                usersList.add(id);
-                emaiList.add(email);
-                */
-            }
-            resultSet.close();
-            preparedStatment.close();
+        req.setAttribute("users", users);
 
-        } catch (SQLException e) {
+        try
 
-        }
-       // req.setAttribute("userList", usersList);
-    req.setAttribute("users", users);
-
-        try {
+        {
             req.getRequestDispatcher("users.jsp").forward(req, res);
-        } catch (IOException e) {
+        } catch (IOException e){
 
         }
 
