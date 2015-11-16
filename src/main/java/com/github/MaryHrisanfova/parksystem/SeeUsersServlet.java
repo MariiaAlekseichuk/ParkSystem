@@ -51,15 +51,14 @@ public class SeeUsersServlet extends HttpServlet {
 
     List <User> users=new ArrayList<User>();
         try {
-            String query = "SELECT id,firstname,lastname,email,groupid FROM users ORDER BY firstname";
-            PreparedStatement preparedStatment = null;
-            preparedStatment = connection.prepareStatement(query);
+            String query = "SELECT login,password,firstname,lastname,email,groupid FROM users ORDER BY firstname";
+            PreparedStatement preparedStatment = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatment.executeQuery();
 
 
 
             while (resultSet.next()) {
-                users.add(new User(resultSet.getInt(1),resultSet.getString(2),resultSet.getString(3),resultSet.getString(4),resultSet.getInt(5)));
+                users.add(new User(resultSet.getString(1),resultSet.getString(2),resultSet.getString(3),resultSet.getString(4), resultSet.getString(5)));
                /* int id = resultSet.getInt(1);
                 String email = resultSet.getString(2);
                 System.out.println(id);

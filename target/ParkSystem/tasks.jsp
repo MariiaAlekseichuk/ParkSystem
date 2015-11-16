@@ -14,6 +14,11 @@
     <title>Задания</title>
 </head>
 <body>
+
+<form action="/index" method="get">
+  <input type="submit" value="Logout">
+</form>
+
 <table border="1">
 <tr>
   <th>Задания</th>

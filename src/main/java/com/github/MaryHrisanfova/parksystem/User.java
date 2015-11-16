@@ -4,19 +4,31 @@ package com.github.MaryHrisanfova.parksystem;
  * Created by Маша on 12.11.2015.
  */
 public class User {
-    private int id;
+    private String login;
+    private String password;
     private String firstname;
     private String lasttname;
     private String email;
 
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public void setFirstname(String firstname) {
+    public User(String login,String password,String firstname, String lasttname,  String email) {
+        this.login=login;
+        this.password=password;
         this.firstname = firstname;
+        this.lasttname = lasttname;
+        this.email = email;
     }
+
+    public User(){
+
+    }
+
+    public boolean isUserCorrect(){
+        
+    return (true);}
+
+    public void setLogin(String login) {this.login = login;}
+
+    public void setFirstname(String firstname) {this.firstname = firstname;}
 
     public void setLasttname(String lasttname) {
         this.lasttname = lasttname;
@@ -26,12 +38,12 @@ public class User {
         this.email = email;
     }
 
-    public void setGroupId(int groupId) {
-        this.groupId = groupId;
-    }
+    public void setPassword(String password) {this.password = password;}
 
-    public int getId() {
-        return id;
+    public String getLogin() {return login;}
+
+    public String getPassword() {
+        return password;
     }
 
     public String getFirstname() {
@@ -46,22 +58,8 @@ public class User {
         return email;
     }
 
-    public int getGroupId() {
-        return groupId;
-    }
-
-    private int groupId;
-
-    public User(int id, String firstname, String lasttname, String email, int groupId) {
-        this.id = id;
-        this.firstname = firstname;
-        this.lasttname = lasttname;
-        this.email = email;
-        this.groupId = groupId;
-    }
-
     @Override
     public String toString() {
-        return (this.firstname+" "+this.lasttname+", "+this.email);
+        return (this.login+" "+this.firstname+" "+this.lasttname+", "+this.email);
     }
 }
