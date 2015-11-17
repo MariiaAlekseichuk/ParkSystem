@@ -18,6 +18,7 @@
         <th>Задания</th>
     </tr>
     <c:forEach items="${tasks}" var="tasktype">
+    <p><input type="hidden" size="25" name="taskid" value='${tasktype.taskid}'>
         <tr>
             <td><c:out value='${tasktype.lastnameOfSender}'/>
             </td>
@@ -35,31 +36,24 @@
             </td>
             <td><c:out value='${tasktype.isconfirmed}'/>
             </td>
+            <td><c:out value='${tasktype.isconfirmed}'/>
+            </td>
+            <td>
+            <a href="/editTask?id=${tasktype.taskid}">Edit</a>
+        </td>
+            <td>
+                <!--form method="POST" action='/delTask' name="DelTask"!-->
+                <a href="/delTask?id=${tasktype.taskid}">Delete</a>
+                </form>
+            </td>
+
         </tr>
-    </c:forEach>
-<tr>
-    <td>
-    </td>
-    <td>
-    </td>
-    <td>
-    </td>
-    <td>
-    </td>
-    <td>
-    </td>
-    <td>
-    </td>
-    <td>
-    </td>
-    <td>
-    </td>
-    <td>
-        <form action="addTask.jsp">
-            <input type="submit" value="Add"/>
-        </form>
-    </td>
-</tr>
+        </c:forEach>
 </table>
+<br>
+<br>
+<form action="addTask.jsp">
+    <input type="submit" value="Add"/>
+</form>
 </body>
 </html>

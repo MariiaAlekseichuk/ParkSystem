@@ -8,7 +8,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page isELIgnored="false" %>
-<%@ page pageEncoding="UTF-8" %>
+<!--%@ page pageEncoding="UTF-8" %!-->
 
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -20,6 +20,14 @@
 <%
     request.setCharacterEncoding("UTF-8");
 %>
+
+<SELECT NAME="select1" >
+    <OPTION>Option 1</OPTION>
+    <OPTION selected><input type="text" name="tasktype" value='${task.tasktype}'/></OPTION>
+    <OPTION>Option 3</OPTION>
+    <OPTION>Option 4</OPTION>
+    <OPTION>Option 5</OPTION>
+</SELECT>
 <form method="POST" action='/addTask' name="AddTask">
     <p><b>Add New Task</b></p>
     <table border="1">
@@ -55,7 +63,5 @@
     <input type="submit" value="Add"/>
 </form>
 <c:out value='${taskWasAdded}'/>
-
-
 </body>
 </html>

@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="Encoding">
-    <file url="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/AddTaskServlet.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/EnterFilter.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/SeeTasksServlet.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/Task.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/TaskDAO.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/UserDAO.java" charset="UTF-8" />
-    <file url="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/UserServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/AddTaskServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/DelTaskServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/EditTaskServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/EnterFilter.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/SeeTasksServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/UserServlet.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/dao/TaskDAO.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/dao/UserDAO.java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/model/Task.java" charset="UTF-8" />
   </component>
 </project>
