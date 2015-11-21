@@ -60,6 +60,6 @@ public class User {
 
     @Override
     public String toString() {
-        return (this.login+" "+this.firstname+" "+this.lasttname+", "+this.email);
+        return (this.lasttname+" "+this.firstname+", "+this.login+", "+this.email);
     }
 }

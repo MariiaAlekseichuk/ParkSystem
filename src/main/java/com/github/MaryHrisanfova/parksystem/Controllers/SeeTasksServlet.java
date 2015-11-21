@@ -32,7 +32,6 @@ public class SeeTasksServlet extends HttpServlet {
     @Override
     public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException {
         ServletContext context = getServletContext();
-
         try {
             connection = getConnection();
         } catch (NamingException e) {
@@ -41,25 +40,34 @@ public class SeeTasksServlet extends HttpServlet {
             e.printStackTrace();
         }
 
-        res.setContentType("text/html");
-
-        HttpSession session = req.getSession(false);
-        String login = (String) session.getAttribute("login");
-        System.out.println(login);
-        if (login != null) {
-            System.out.println(login + "сессия здесь");//пойдет в лог
-        }
-        ;
 
         List<Task> tasks = new ArrayList<Task>();
 
         TaskDAO dao = new TaskDAO();
-        tasks = dao.getAllTasks(tasks);
+
+        HttpSession session = req.getSession(true);
+        String login = (String) session.getAttribute("login");
+        Integer groupid = (Integer) session.getAttribute("groupid");
+
+        req.setAttribute("groupid", groupid);
+        if(groupid==2){
+            tasks = dao.getTasksForUser(tasks,login);
+            System.out.println(tasks);
+            if (tasks.isEmpty()){
+                req.setAttribute("tasksare","Для Вас нет задач");
+            }
+            else{
+                req.setAttribute("tasksare","Ваши задачи");
+            }
+        }
+        if (groupid==1) {
+            req.setAttribute("tasksare","Все задачи");
+            tasks = dao.getAllTasks(tasks);
+        }
         req.setAttribute("tasks", tasks);
 
         try {
             context.getRequestDispatcher("/tasks.jsp").forward(req, res);
-            // req.getRequestDispatcher("tasks.jsp").forward(req, res);
         } catch (IOException e) {
 
 

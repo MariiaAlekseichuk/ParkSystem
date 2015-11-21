@@ -1,22 +1,50 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Маша
-  Date: 14.11.2015
-  Time: 14:06
-  To change this template use File | Settings | File Templates.
---%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page isELIgnored="false" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
 <head>
-    <title>Задания</title>
+    <fmt:setLocale value="${sessionScope.local}"/>
+    <fmt:setBundle basename="local" var="loc"/>
+    <fmt:message bundle="${loc}" key="local.yourtasks" var="yourtasks"></fmt:message >
+    <fmt:message bundle="${loc}" key="local.editdonebutton" var="editdonebutton"></fmt:message >
+    <fmt:message bundle="${loc}" key="local.delbutton" var="delbutton"></fmt:message >
+    <fmt:message bundle="${loc}" key="local.editbutton" var="editbutton"></fmt:message >
+    <fmt:message bundle="${loc}" key="local.addtaskbutton" var="addtaskbutton"></fmt:message >
+    <fmt:message bundle="${loc}" key="local.seeallusers" var="seeallusers"></fmt:message >
+
+    <fmt:message bundle="${loc}" key="local.tasksender" var="tasksender"></fmt:message >
+    <fmt:message bundle="${loc}" key="local.tasktype" var="tasktype"></fmt:message >
+    <fmt:message bundle="${loc}" key="local.tasktext" var="tasktext"></fmt:message >
+    <fmt:message bundle="${loc}" key="local.recipient" var="recipient"></fmt:message >
+    <fmt:message bundle="${loc}" key="local.isdone" var="isdone"></fmt:message >
+    <fmt:message bundle="${loc}" key="local.isconfirmed" var="isconfirmed"></fmt:message >
+
+
 </head>
 <body>
+<p><c:out value='${yourtasks}'/></p>
 <table border="1">
     <tr>
-        <th>Задания</th>
-    </tr>
+        <td align="center" colspan="2">
+            <strong>${tasksender}</strong></td>
+        <td align="center">
+            <strong>${tasktype}</strong>
+        </td>
+        <td align="center">
+            <strong>${tasktext}</strong>
+        </td>
+        <td align="center" colspan="2">
+            <strong>${recipient}</strong>
+        </td>
+        <td align="center">
+            <strong>${isdone}</strong>
+        </td>
+        <td align="center">
+            <strong>${isconfirmed}</strong>
+        </td>
     <c:forEach items="${tasks}" var="tasktype">
     <p><input type="hidden" size="25" name="taskid" value='${tasktype.taskid}'>
         <tr>
@@ -36,24 +64,37 @@
             </td>
             <td><c:out value='${tasktype.isconfirmed}'/>
             </td>
-            <td><c:out value='${tasktype.isconfirmed}'/>
-            </td>
+                <c:if test='${groupid==1}'>
             <td>
-            <a href="/editTask?id=${tasktype.taskid}">Edit</a>
-        </td>
-            <td>
-                <!--form method="POST" action='/delTask' name="DelTask"!-->
-                <a href="/delTask?id=${tasktype.taskid}">Delete</a>
-                </form>
+                    <a href="\edit_task?id=${tasktype.taskid}">${editbutton}</a>
             </td>
+                </c:if>
+
+                <c:if test='${groupid==1}'>
+             <td>
+                    <a href="\delete_task?id=${tasktype.taskid}">${delbutton}</a>
+             </td>
+                 </c:if>
+                <c:if test='${groupid==2}'>
+             <td>
+                    <a href="\edit_is_task_done?id=${tasktype.taskid}">${editdonebutton}</a>
+              </td>
+                </c:if>
 
         </tr>
         </c:forEach>
 </table>
 <br>
 <br>
+
 <form action="addTask.jsp">
-    <input type="submit" value="Add"/>
+ <c:if test='${groupid==1}'>
+        <input type="submit" value=${addtaskbutton} style='display:table-cell'/>
+
 </form>
+
+<br>
+<a href="\users">${seeallusers}</a>
+ </c:if>
 </body>
 </html>

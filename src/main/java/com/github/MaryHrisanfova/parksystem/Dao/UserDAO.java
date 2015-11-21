@@ -106,7 +106,7 @@ public class UserDAO {
 
     public List<User> getAllUser(List<User> users) {
         try {
-            String query = "SELECT login,password,firstname,lastname,email,groupid FROM users ORDER BY firstname";
+            String query = "SELECT login,password,firstname,lastname,email,groupid FROM users ORDER BY lastname";
             PreparedStatement preparedStatment = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatment.executeQuery();
 
@@ -121,6 +121,24 @@ public class UserDAO {
         return users;
     }
 
+    public int getGroupId(String login) {
+        int groupid=0;
+        try {
+            String query = "SELECT groupid FROM users WHERE login=?";
+            PreparedStatement preparedStatment = connection.prepareStatement(query);
+            preparedStatment.setString(1, login);
+            ResultSet resultSet = preparedStatment.executeQuery();
 
+            while (resultSet.next()) {
+                groupid=resultSet.getInt("groupid");
+            }
+            resultSet.close();
+            preparedStatment.close();
+
+        } catch (SQLException e) {
+        }
+        return groupid;
+
+    }
 
 }

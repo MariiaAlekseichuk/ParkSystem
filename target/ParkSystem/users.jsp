@@ -1,24 +1,21 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@ page import="java.util.List" %>
-<%@ page import="java.util.Iterator" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: Маша
-  Date: 09.11.2015
-  Time: 22:26
-  To change this template use File | Settings | File Templates.
---%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
-<%@ page isELIgnored="false"%>
+<%@ page isELIgnored="false" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
 <head>
-  <title></title>
+  <fmt:setLocale value="${sessionScope.local}"/>
+  <fmt:setBundle basename="local" var="loc"/>
+  <fmt:message bundle="${loc}" key="local.usersinfo" var="usersinfo"></fmt:message >
+
+  <title>${usersinfo}</title>
 </head>
 <body>
-<%--= request.getAttribute("userList") --%>
 <table border="1">
   <tr>
-    <th>Users</th>
+    <th>${usersinfo}</th>
   </tr>
   <c:forEach items="${users}" var="user">
     <tr>

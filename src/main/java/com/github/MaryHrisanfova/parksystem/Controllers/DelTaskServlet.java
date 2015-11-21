@@ -3,6 +3,7 @@ package com.github.MaryHrisanfova.parksystem.controllers;
 import com.github.MaryHrisanfova.parksystem.dao.TaskDAO;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -14,7 +15,7 @@ import java.io.IOException;
 /**
  * Created by Маша on 16.11.2015.
  */
-@WebServlet(urlPatterns = "/delTask")
+@WebServlet(urlPatterns = "/delete_task")
 public class DelTaskServlet extends HttpServlet {
     private TaskDAO dao;
     int id;
@@ -26,13 +27,17 @@ public class DelTaskServlet extends HttpServlet {
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        HttpSession session = request.getSession(false);
+        ServletContext context = getServletContext();
+
+        HttpSession session = request.getSession(true);
+        String login = (String) session.getAttribute("login");
+        Integer groupid = (Integer) session.getAttribute("groupid");
+        request.setAttribute("groupid", groupid);
+
+        request.setAttribute("taskWasDeleted", "");
         request.setCharacterEncoding("utf-8");//Для отправки русских букв
-        id=0;
-        //request.setAttribute("taskWasAdded", "");
-        // id = Integer.parseInt(request.getParameter("id"));
-        //  System.out.println("id from get"+id);
-        //  request.getParameter("id");
+        id = 0;
+
         System.out.println("in get");
         if (id == 0) {
             id = Integer.parseInt(request.getParameter("id"));
@@ -52,26 +57,17 @@ public class DelTaskServlet extends HttpServlet {
         System.out.println("in post");
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html");
-        request.setAttribute("taskWasAdded", "");
-        //request.setAttribute("taskWasDeleted", "");
+
         String redirect = "delTask.jsp";
 
-
+        request.setAttribute("taskWasDeleted", "✅");
+        dao.delTask(id);
         RequestDispatcher rd = request.getRequestDispatcher(redirect);
         rd.forward(request, response);
 
-        dao.delTask(id);
-        System.out.println("id from post"+id);
     }
 }
-        //request.setAttribute("taskWasDeleted", "Задача удалена");
-    /*
-                //  request.setAttribute("user", dao.getUserIdByFLnames(request.getParameter("firstName"), request.getParameter("lastName")));
-            }
-             if (action.equalsIgnoreCase("delete")){
-             String action = request.getParameter("action");
-             }
-*/
+
 
 
 

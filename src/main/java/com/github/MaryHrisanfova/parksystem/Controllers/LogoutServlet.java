@@ -12,7 +12,7 @@ import java.io.PrintWriter;
 /**
  * Created by Маша on 16.11.2015.
  */
-@WebServlet (urlPatterns ="/index")
+//@WebServlet (urlPatterns ="/index")
 public class LogoutServlet extends HttpServlet {
     protected void doGet(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {

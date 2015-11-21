@@ -87,6 +87,33 @@ public class TaskDAO {
             ResultSet resultSet = preparedStatment.executeQuery();
 
             while (resultSet.next()) {
+                tasks.add(new Task(resultSet.getInt(1), resultSet.getString(2), resultSet.getString(3), resultSet.getString(4), resultSet.getString(5), resultSet.getString(6), resultSet.getString(7), resultSet.getBoolean(8), resultSet.getBoolean(9)));
+
+            }
+            resultSet.close();
+            preparedStatment.close();
+
+        } catch (SQLException e) {
+
+        }
+        return tasks;
+    }
+
+
+    public List<Task> getTasksForUser(List<Task> tasks,String login) {
+        // List<Task> tasks = new ArrayList<Task>();
+        try {
+            String query = "SELECT tasks.id,sender.lastname, sender.firstname, tasks.tasktype,  tasks.tasktext,recipient.lastname, recipient.firstname,tasks.isdone, tasks.isconfirmed \n" +
+                    "FROM tasks \n" +
+                    " INNER JOIN users AS sender\n" +
+                    " INNER JOIN users AS recipient\n" +
+                    " ON sender.id=tasks.id_sender AND recipient.id=tasks.id_recipient AND recipient.login=?";
+
+            PreparedStatement preparedStatment = connection.prepareStatement(query);
+            preparedStatment.setString(1, login);
+            ResultSet resultSet = preparedStatment.executeQuery();
+
+            while (resultSet.next()) {
                 tasks.add(new Task(resultSet.getInt(1),resultSet.getString(2), resultSet.getString(3), resultSet.getString(4), resultSet.getString(5), resultSet.getString(6), resultSet.getString(7), resultSet.getBoolean(8), resultSet.getBoolean(9)));
 
             }
@@ -98,6 +125,13 @@ public class TaskDAO {
         }
         return tasks;
     }
+
+
+
+
+
+
+
 
     public int getUserIdByFLnames(String firstname, String lastname) {
         int id=0;
@@ -168,12 +202,6 @@ public class TaskDAO {
                          boolean is_done,
                          boolean is_confirmed
     )
-
-           /*
-
-            int id,
-                         int id_of_sender,String tasktype,String tasktext,int id_of_recipient, boolean is_done, boolean is_confirmed)
-                         */
     {
         try {
 
@@ -196,17 +224,6 @@ public class TaskDAO {
             preparedStatment.setBoolean(6, is_confirmed);
             preparedStatment.setInt(7, id);
 
- /*
-            String query = "UPDATE tasks SET id_sender =?,tasktype=?,tasktext=?,id_recipient =?,isdone=?,isconfirmed=? WHERE id =?";
-            PreparedStatement preparedStatment = connection.prepareStatement(query);
-            preparedStatment.setInt(1, id_of_sender);
-            preparedStatment.setString(2, tasktype);
-            preparedStatment.setString(3, tasktext);
-            preparedStatment.setInt(4, id_of_recipient);
-            preparedStatment.setInt(5, id);
-            preparedStatment.setBoolean(6, is_done);
-            preparedStatment.setBoolean(7, is_confirmed);
-*/
             preparedStatment.executeUpdate();
             preparedStatment.close();
 
@@ -214,6 +231,22 @@ public class TaskDAO {
         }
     }
 
+
+    public void editIsDoneTask(int id, boolean is_done)
+    {
+        try {
+
+            String query = "UPDATE tasks SET isdone=? WHERE id =?";
+            PreparedStatement preparedStatment = connection.prepareStatement(query);
+            preparedStatment.setBoolean(1, is_done);
+            preparedStatment.setInt(2, id);
+
+            preparedStatment.executeUpdate();
+            preparedStatment.close();
+
+        } catch (SQLException e) {
+        }
+    }
 
     public int getIdRecipient() {
         return idRecipient;

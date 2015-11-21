@@ -4,17 +4,17 @@ import com.github.MaryHrisanfova.parksystem.model.Task;
 import com.github.MaryHrisanfova.parksystem.dao.TaskDAO;
 
 import javax.servlet.RequestDispatcher;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-
 /**
  * Created by Маша on 16.11.2015.
  */
-@WebServlet(urlPatterns = "/addTask")
+@WebServlet(urlPatterns = "/add_task")
 public class AddTaskServlet extends HttpServlet {
     private TaskDAO dao;
 
@@ -22,19 +22,30 @@ public class AddTaskServlet extends HttpServlet {
         super();
         dao = new TaskDAO();
     }
-@Override
+
+    @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");//Для отправки русских букв
+        ServletContext context = getServletContext();
+/*
+        try {
+            canISeePage(request,response,context);
+        }
+        catch (IOException e){
 
+        }
         doPost(request, response);
-
+*/
     }
-@Override
+
+    @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html");
         request.setAttribute("taskWasAdded", "");
         String redirect = "addTask.jsp";
+
+        System.out.println("select"+request.getParameter("select1"));
 
         String action = request.getParameter("action");
         if (action.equalsIgnoreCase("insert")) {

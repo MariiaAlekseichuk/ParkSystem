@@ -22,6 +22,8 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/resources" type="java-resource" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/Servlets" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/webapp/WEB-INF/properties" type="java-resource" />
+      <sourceFolder url="file://$MODULE_DIR$/src/main/webapp/properties" type="java-resource" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
@@ -40,5 +42,6 @@
         <SOURCES />
       </library>
     </orderEntry>
+    <orderEntry type="library" name="resources" level="project" />
   </component>
 </module>

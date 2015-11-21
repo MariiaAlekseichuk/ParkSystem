@@ -12,7 +12,7 @@ import java.io.IOException;
  * Created by Маша on 15.11.2015.
  */
 
-//@WebFilter(urlPatterns = "index.jsp")
+
 public class EnterFilter implements Filter {
     private UserDAO dao;
     private FilterConfig config;
@@ -21,39 +21,32 @@ public class EnterFilter implements Filter {
         this.config = config;
     }
 
-        //@Override
-        public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
+    public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
 
-            System.out.println("in filter");
-            ServletContext context = config.getServletContext();
-            dao = new UserDAO();
-            // TODO: проверить логин и пароль
-            HttpServletRequest httpServletRequest = (HttpServletRequest) servletRequest;
-            HttpServletResponse httpServletResponse = (HttpServletResponse) servletResponse;
+        System.out.println("in filter");
+        ServletContext context = config.getServletContext();
+        dao = new UserDAO();
 
-            String login = httpServletRequest.getParameter("login");
-            String password = httpServletRequest.getParameter("password");
+        HttpServletRequest httpServletRequest = (HttpServletRequest) servletRequest;
+        HttpServletResponse httpServletResponse = (HttpServletResponse) servletResponse;
 
-            if (dao.isUserCorrect(login, password)) {
-                HttpSession session=httpServletRequest.getSession();
-                session.setAttribute("login", login);
-                //RequestDispatcher dispatcher = context.getRequestDispatcher("tasks.jsp");
+        String login = httpServletRequest.getParameter("login");
+        String password = httpServletRequest.getParameter("password");
 
-                filterChain.doFilter(servletRequest, servletResponse);
+        if (dao.isUserCorrect(login, password)) {
+            HttpSession session = httpServletRequest.getSession(true);
+            session.setAttribute("login", login);
+            session.setAttribute("groupid", dao.getGroupId(login));
 
-                //dispatcher.include(servletRequest, servletResponse);
-                //dispatcher.forward(httpServletRequest, httpServletResponse);
-               // context.getRequestDispatcher("tasks.jsp").forward(httpServletRequest, httpServletResponse);
+            filterChain.doFilter(servletRequest, servletResponse);
+
+        } else
+
+            context.getRequestDispatcher("/error.jsp").forward(httpServletRequest, httpServletResponse);
+    }
 
 
-            }
-            else
-
-                context.getRequestDispatcher("/error.html").forward(httpServletRequest, httpServletResponse);
-        }
-
-   // @Override
     public void destroy() {
-        //this.filterConfig = null;
+        this.config = null;
     }
 }

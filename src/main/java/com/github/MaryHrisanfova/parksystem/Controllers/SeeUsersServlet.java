@@ -5,11 +5,13 @@ import com.github.MaryHrisanfova.parksystem.dao.UserDAO;
 
 import javax.naming.NamingException;
 import javax.servlet.ServletConfig;
+import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 import java.io.IOException;
 import java.sql.*;
 import java.util.ArrayList;
@@ -24,43 +26,50 @@ import static com.github.MaryHrisanfova.parksystem.dao.DBConnection.getConnectio
 public class SeeUsersServlet extends HttpServlet {
 
     private Connection connection;
-    // private DataSource datasource;
     private Statement statement;
     private ServletConfig config;
 
-    public void init(ServletConfig config) throws ServletException {
-
-    }
-
-    /*
-        private Connection getConnection() throws SQLException {
-            return datasource.getConnection();
-        }
-    */
     @Override
-    public void doGet(HttpServletRequest req, HttpServletResponse res) throws ServletException {
-        try {
-            connection = getConnection();
+    public void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException {
+        ServletContext context = getServletContext();
+        HttpSession session = request.getSession(true);
+        String login = (String) session.getAttribute("login");
+        Integer groupid = (Integer)session.getAttribute("groupid");
 
-        } catch (NamingException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
+        if (groupid!=1){
+            try {
+                context.getRequestDispatcher("/error.jsp").forward(request, response);
+            }
+            catch (IOException e){
+
+            }
         }
 
+        else {
+            try {
+                connection = getConnection();
 
-        List<User> users = new ArrayList<User>();
-        UserDAO dao = new UserDAO();
-        users = dao.getAllUser(users);
+            } catch (NamingException e) {
+                e.printStackTrace();
+            } catch (SQLException e) {
+                e.printStackTrace();
+            }
 
-        req.setAttribute("users", users);
+            response.setContentType("text/html");
 
-        try
+            List<User> users = new ArrayList<User>();
+            UserDAO dao = new UserDAO();
+            users = dao.getAllUser(users);
 
-        {
-            req.getRequestDispatcher("users.jsp").forward(req, res);
-        } catch (IOException e){
+            request.setAttribute("users", users);
 
+            try
+
+            {
+                context.getRequestDispatcher("/users.jsp").forward(request, response);
+            } catch (IOException e) {
+
+            }
         }
 
     }

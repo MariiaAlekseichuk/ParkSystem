@@ -1,35 +1,37 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: Маша
-  Date: 16.11.2015
-  Time: 21:07
-  To change this template use File | Settings | File Templates.
---%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@ page isELIgnored="false" %>
-<!--%@ page pageEncoding="UTF-8" %!-->
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+
 <html>
 <head>
-    <title>Delete task</title>
+    <fmt:setLocale value="${sessionScope.local}"/>
+    <fmt:setBundle basename="local" var="loc"/>
+
+    <fmt:message bundle="${loc}" key="local.fn" var="fn"></fmt:message>
+    <fmt:message bundle="${loc}" key="local.ln" var="ln"></fmt:message>
+    <fmt:message bundle="${loc}" key="local.deltask" var="deltask"></fmt:message>
+    <fmt:message bundle="${loc}" key="local.deltaskquestion" var="deltaskquestion"></fmt:message>
+    <fmt:message bundle="${loc}" key="local.delbutton" var="delbutton"></fmt:message>
+    <fmt:message bundle="${loc}" key="local.no" var="no"></fmt:message>
+
+
+    <title>${deltask}</title>
 </head>
 <body>
 
-<p><b>Do you want to Delete Task?</b></p>
+<p><b>${deltaskquestion}</b></p>
 
 
-<form method="POST" action='\delTask' name="DelTask">
+<form method="POST" action='\delete_task' name="DelTask">
     <input type="hidden" name="action" value="delete"/>
-    <td><input type="submit" value="Delete"/></td>
+    <td><input type="submit" value=${delbutton}></td>
+    <c:out value='${taskWasDeleted}'/>
 </form>
 <br>
 
-<form action='/tasks' name="DelTask">
-    <td><input type="submit" value="No" ac/></td>
-</form>
+<INPUT type=button value="${no}" onClick="history.back();">
 
-
-<c:out value='${taskWasDeleted}'/>
 </body>
 </html>
