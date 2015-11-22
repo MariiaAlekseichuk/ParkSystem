@@ -1,9 +1,13 @@
 package com.github.MaryHrisanfova.parksystem.model;
 
-/**
- * Created by ���� on 12.11.2015.
+/**Класс, отвечающий за пользователей.
+ * Содержит только getters и setters для полей класса
+ * @author Маша
+ * @since 14.11.2015.
  */
 public class User {
+
+    private Integer id;
     private String login;
     private String password;
     private String firstname;
@@ -18,13 +22,18 @@ public class User {
         this.email = email;
     }
 
+    public User(Integer id, String lasttname, String firstname){
+        this.id = id;
+        this.lasttname = lasttname;
+        this.firstname = firstname;
+    }
+
     public User(){
 
     }
 
     public boolean isUserCorrect(){
-        
-    return (true);}
+        return (true);}
 
     public void setLogin(String login) {this.login = login;}
 
@@ -58,8 +67,16 @@ public class User {
         return email;
     }
 
+    public Integer getId() {
+        return id;
+    }
+
+    public void setId(Integer id) {
+        this.id = id;
+    }
+
     @Override
     public String toString() {
-        return (this.lasttname+" "+this.firstname+", "+this.login+", "+this.email);
+        return (this.firstname+" "+this.lasttname+", "+this.login+", "+this.email);
     }
 }

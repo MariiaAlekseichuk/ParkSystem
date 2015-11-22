@@ -8,19 +8,18 @@
     <fmt:setLocale value="${sessionScope.local}"/>
     <fmt:setBundle basename="local" var="loc"/>
 
-    <fmt:message bundle="${loc}" key="local.fn" var="fn"></fmt:message >
-    <fmt:message bundle="${loc}" key="local.ln" var="ln"></fmt:message >
-    <fmt:message bundle="${loc}" key="local.tasktype" var="tasktype"></fmt:message >
-    <fmt:message bundle="${loc}" key="local.tasktext" var="tasktext"></fmt:message >
-    <fmt:message bundle="${loc}" key="local.ofsender" var="ofsender"></fmt:message >
-    <fmt:message bundle="${loc}" key="local.ofrecipient" var="ofrecipient"></fmt:message >
-    <fmt:message bundle="${loc}" key="local.addnewtask" var="addnewtask"></fmt:message >
-    <fmt:message bundle="${loc}" key="local.done" var="done"></fmt:message >
-    <fmt:message bundle="${loc}" key="local.edittask" var="edittask"></fmt:message >
-    <fmt:message bundle="${loc}" key="local.status" var="status"></fmt:message >
-    <fmt:message bundle="${loc}" key="local.checked" var="checked"></fmt:message >
-    <fmt:message bundle="${loc}" key="local.updatebutton" var="updatebutton"></fmt:message >
-
+    <fmt:message bundle="${loc}" key="local.tasktype" var="tasktype"></fmt:message>
+    <fmt:message bundle="${loc}" key="local.tasktext" var="tasktext"></fmt:message>
+    <fmt:message bundle="${loc}" key="local.tasksender" var="tasksender"></fmt:message>
+    <fmt:message bundle="${loc}" key="local.recipient" var="recipient"></fmt:message>
+    <fmt:message bundle="${loc}" key="local.addnewtask" var="addnewtask"></fmt:message>
+    <fmt:message bundle="${loc}" key="local.done" var="done"></fmt:message>
+    <fmt:message bundle="${loc}" key="local.back" var="back"></fmt:message>
+    <fmt:message bundle="${loc}" key="local.addnewtask" var="addnewtask"></fmt:message>
+    <fmt:message bundle="${loc}" key="local.edittask" var="edittask"></fmt:message>
+    <fmt:message bundle="${loc}" key="local.updatebutton" var="updatebutton"></fmt:message>
+    <fmt:message bundle="${loc}" key="local.isdone" var="isdone"></fmt:message>
+    <fmt:message bundle="${loc}" key="local.isconfirmed" var="isconfirmed"></fmt:message>
 
 
     <title>${edittask}</title>
@@ -28,46 +27,73 @@
 <body>
 
 <form method="POST" action='\edit_task' name="EditTask">
-<table border="1">
+    <table border="1">
 
-    <tr>
-        <td>${fn} ${ofsender}</td>
-        <td><input type="text" name="firstnameOfSender" value='${task.firstnameOfSender}'/></td>
-    </tr>
-    <tr>
-        <td>${ln} ${ofsender}</td>
-        <td><input type="text" name="lastnameOfSender" value='${task.lastnameOfSender}'/></td>
-    </tr>
-    <tr>
-        <td>${tasktype}</td>
-        <td><input type="text" name="tasktype" value='${task.tasktype}'/></td>
-    </tr>
-    <tr>
-        <td>${tasktext}</td>
-        <td><input type="text" name="tasktext" value='${task.tasktext}'/></td>
-    </tr>
+        <tr>
+            <td>${tasksender}</td>
+            <td>
+                <SELECT disabled required NAME="FLNamesSender">
+                    <OPTION value='${currentUser.id}'>
+                        <c:out value='${currentUser.lasttname}'/>
+                        <c:out value='${currentUser.firstname}'/>
+                    </OPTION>
+                </SELECT>
+            </td>
+        <tr>
+            <td>${tasktype}</td>
+            <td>
+                <SELECT required contenteditable NAME="tasktype">
+                    <OPTION selected>${task.tasktype}</OPTION>
+                    <OPTION>Высадка</OPTION>
+                    <OPTION>Лечение</OPTION>
+                    <OPTION>Обработка</OPTION>
+                </SELECT>
 
-    <tr>
-        <td>${fn} ${ofrecipient}</td>
-        <td><input type="text" name="firstnameOfRecipient" value='${task.firstnameOfRecipient}'/></td>
-    </tr>
-    <tr>
-    <td>${ln} ${ofrecipient}</td>
-    <td><input type="text" name="lastnameOfRecipient" value='${task.lastnameOfRecipient}'/></td>
-</tr>
-    <tr>
-        <td>${status}</td>
-        <td><input type="text" name="isdone" value='${task.isdone}'/></td>
-    </tr>
-    <tr>
-        <td>${checked}</td>
-        <td><input type="text" name="isconfirmed" value='${task.isconfirmed}'/></td>
-    </tr>
-</table>
+            </td>
+        </tr>
+        <tr>
+            <td>${tasktext}</td>
+            <td><input type="text" name="tasktext" value='${task.tasktext}'/></td>
+        </tr>
+
+        <td>${recipient}</td>
+        <td>
+            <SELECT required NAME="FLNamesRecipient">
+<c:forEach items="${users}" var="users">
+    <OPTION value='${users.id}'>
+                    <c:out value='${users.lasttname}'/>
+                    <c:out value='${users.firstname}'/>
+                </OPTION>
+</c:forEach>
+                <option selected value="${id_recipient}">${task.lastnameOfRecipient} ${task.firstnameOfRecipient}</option>
+            </SELECT>
+        </td>
 
 
+        <tr>
+            <td>${isdone}</td>
+            <td>
+            <SELECT required contenteditable NAME="isdone">
+                <OPTION selected>${task.isdone}</OPTION>
+                <OPTION>Выполнено</OPTION>
+                <OPTION>Не выполнено</OPTION>
+            </SELECT>
+            </td>
+        </tr>
+        <tr>
+            <td>${isconfirmed}</td>
+            <td>
+                <SELECT required contenteditable NAME="isconfirmed">
+                    <OPTION selected>${task.isconfirmed}</OPTION>
+                    <OPTION>Подтверждено</OPTION>
+                    <OPTION>Не подтверждено</OPTION>
+                </SELECT>
+            </td>
+        </tr>
+    </table>
 
-<br>
+
+    <br>
 
     <input type="hidden" name="action" value="update"/>
     <td><input type="submit" value="${updatebutton}"/></td>

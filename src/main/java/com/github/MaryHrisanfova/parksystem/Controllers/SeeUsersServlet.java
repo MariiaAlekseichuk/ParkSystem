@@ -2,8 +2,6 @@ package com.github.MaryHrisanfova.parksystem.controllers;
 
 import com.github.MaryHrisanfova.parksystem.model.User;
 import com.github.MaryHrisanfova.parksystem.dao.UserDAO;
-
-import javax.naming.NamingException;
 import javax.servlet.ServletConfig;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -20,7 +18,10 @@ import java.util.List;
 import static com.github.MaryHrisanfova.parksystem.dao.DBConnection.getConnection;
 
 /**
- * Created by ���� on 12.11.2015.
+ * @author Маша
+ * @since 12.11.2015.
+ * @exception SQLException, NamingException,  во время соединения с БД
+ *            IOException - во время перенаправления на страницы /users.jsp, /error.jsp
  */
 @WebServlet(urlPatterns = "/users")
 public class SeeUsersServlet extends HttpServlet {
@@ -34,26 +35,17 @@ public class SeeUsersServlet extends HttpServlet {
         ServletContext context = getServletContext();
         HttpSession session = request.getSession(true);
         String login = (String) session.getAttribute("login");
-        Integer groupid = (Integer)session.getAttribute("groupid");
+        Integer groupid = (Integer) session.getAttribute("groupid");
 
-        if (groupid!=1){
+        if (groupid != 1) {
             try {
                 context.getRequestDispatcher("/error.jsp").forward(request, response);
-            }
-            catch (IOException e){
+            } catch (IOException e) {
 
             }
-        }
+        } else {
 
-        else {
-            try {
-                connection = getConnection();
-
-            } catch (NamingException e) {
-                e.printStackTrace();
-            } catch (SQLException e) {
-                e.printStackTrace();
-            }
+            connection = getConnection();
 
             response.setContentType("text/html");
 

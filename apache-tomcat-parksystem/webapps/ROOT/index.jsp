@@ -18,27 +18,34 @@
 
 </head>
 <body>
-    <c:out value="❧ ${namesystem} ☙"/>
+<c:out value="${namesystem}"/>
+
+
 <div align="right">
-    <form name="Language choose" action="\index" method="post">
-        <SELECT required name="local">
+    <form name="Language choose" action="\index" method="get">
+        <SELECT size="2" required name="local">
             <OPTION value="ru">Русский (RU)</OPTION>
             <OPTION value="en">English (EN)</OPTION>
         </SELECT>
+        <br>
+        <br>
         <input type="submit" value="${updatebutton}"/>
     </form>
 </div>
 
 
-<form action="/tasks">
-    <input name="login" type="text" value="lesnoi1" placeholder="${locallogin}"/>
-        <br>
-        <br>
+<form action="/index" method="post">
+    <input name="login" type="text" value="lesnoi" placeholder="${locallogin}"/>
+    <br>
+    <br>
     <input name="password" type="password" value="1" placeholder="${localpassword}"/>
-        <br>
-        <br>
+    <br>
+    <br>
+
     <input type="submit" value="${loginbutton}"/>
+
 </form>
+
 <br>
 
 <form action="/addnewuser">

@@ -20,7 +20,9 @@
     <fmt:message bundle="${loc}" key="local.status" var="status"></fmt:message >
     <fmt:message bundle="${loc}" key="local.checked" var="checked"></fmt:message >
     <fmt:message bundle="${loc}" key="local.updatebutton" var="updatebutton"></fmt:message >
-
+    <fmt:message bundle="${loc}" key="local.isdone" var="isdone"></fmt:message>
+    <fmt:message bundle="${loc}" key="local.tasksender" var="tasksender"></fmt:message>
+    <fmt:message bundle="${loc}" key="local.recipient" var="recipient"></fmt:message>
 
 
     <title>${edittask}</title>
@@ -31,12 +33,8 @@
 <table border="1">
 
     <tr>
-        <td>${fn} ${ofsender}</td>
-        <td><input type="text" name="firstnameOfSender" value='${task.firstnameOfSender}' disabled/></td>
-    </tr>
-    <tr>
-        <td>${ln} ${ofsender}</td>
-        <td><input type="text" name="lastnameOfSender" value='${task.lastnameOfSender}' disabled/></td>
+        <td>${tasksender}</td>
+        <td><input type="text" name="firstnameOfSender" value='${task.firstnameOfSender} ${task.lastnameOfSender}' disabled/></td>
     </tr>
     <tr>
         <td>${tasktype}</td>
@@ -48,16 +46,18 @@
     </tr>
 
     <tr>
-        <td>${fn} ${ofrecipient}</td>
-        <td><input type="text" name="firstnameOfRecipient" value='${task.firstnameOfRecipient}' disabled/></td>
+        <td>${recipient}</td>
+        <td><input type="text" name="firstnameOfRecipient" value='${task.firstnameOfRecipient} ${task.lastnameOfRecipient}' disabled/></td>
     </tr>
     <tr>
-    <td>${ln} ${ofrecipient}</td>
-    <td><input type="text" name="lastnameOfRecipient" value='${task.lastnameOfRecipient}' disabled/></td>
-</tr>
-    <tr>
-        <td>${status}</td>
-        <td><input type="text" name="isdone" value='${task.isdone}'/></td>
+        <td>${isdone}</td>
+        <td>
+            <SELECT required contenteditable NAME="isdone">
+                <OPTION selected>${task.isdone}</OPTION>
+                <OPTION>Выполнено</OPTION>
+                <OPTION>Не выполнено</OPTION>
+            </SELECT>
+        </td>
     </tr>
     <tr>
         <td>${checked}</td>

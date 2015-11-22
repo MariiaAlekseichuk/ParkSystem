@@ -21,11 +21,19 @@
     <fmt:message bundle="${loc}" key="local.recipient" var="recipient"></fmt:message >
     <fmt:message bundle="${loc}" key="local.isdone" var="isdone"></fmt:message >
     <fmt:message bundle="${loc}" key="local.isconfirmed" var="isconfirmed"></fmt:message >
+    <fmt:message bundle="${loc}" key="local.logoutbutton" var="logoutbutton"></fmt:message >
 
 
 </head>
 <body>
 <p><c:out value='${yourtasks}'/></p>
+
+<div align="right">
+<form action="logout.jsp">
+    <input type="submit" value="${logoutbutton}"/>
+</form>
+</div>
+
 <table border="1">
     <tr>
         <td align="center" colspan="2">
@@ -87,7 +95,7 @@
 <br>
 <br>
 
-<form action="addTask.jsp">
+<form action="\add_task">
  <c:if test='${groupid==1}'>
         <input type="submit" value=${addtaskbutton} style='display:table-cell'/>
 

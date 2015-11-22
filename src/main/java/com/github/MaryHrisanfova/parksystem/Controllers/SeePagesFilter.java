@@ -1,7 +1,5 @@
 package com.github.MaryHrisanfova.parksystem.controllers;
 
-import com.github.MaryHrisanfova.parksystem.dao.UserDAO;
-
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -9,7 +7,10 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * Created by ���� on 17.11.2015.
+ * Берет из сессии атрибуты login,groupid
+ * Отправляет в response атрибуты всем остальным сервлетам
+ * @author Маша
+ * @since 17.11.2015.
  */
 public class SeePagesFilter implements Filter {
     private FilterConfig config;
@@ -19,7 +20,6 @@ public class SeePagesFilter implements Filter {
         this.config = config;
     }
 
-    //@Override
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
 
         System.out.println("in filter");
@@ -30,30 +30,27 @@ public class SeePagesFilter implements Filter {
 
         HttpSession session = httpServletRequest.getSession(true);
 
-        System.out.println("session="+session);
-
         if (session == null) {
             context.getRequestDispatcher("/error.jsp").forward(httpServletRequest, httpServletResponse);
         } else {
             String login = (String) session.getAttribute("login");
-            System.out.println("login from filter" + login);
+
             Integer groupid = (Integer) session.getAttribute("groupid");
             session.getAttribute("local");
-            //httpServletRequest.setAttribute("groupid", groupid);
-            if (login != null & groupid != null) {
+
+            if (login != null) {
+
                 filterChain.doFilter(servletRequest, servletResponse);
 
-            }
-            else {
-                context.getRequestDispatcher("/error.jsp").forward(httpServletRequest, httpServletResponse);
+            } else {
+
+                httpServletRequest.getRequestDispatcher("/error.jsp").forward(httpServletRequest, httpServletResponse);
             }
         }
 
 
     }
 
-
-    // @Override
     public void destroy() {
         this.config = null;
     }

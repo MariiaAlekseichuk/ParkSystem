@@ -1,32 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AnalysisUIOptions">
+    <option name="ANALYZE_TEST_SOURCES" value="false" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="999f44e5-8e86-4f51-afda-413f5b606d18" name="Default" comment="">
-      <change type="DELETED" beforePath="C:\Java\ParkSystem\apache-tomcat-parksystem\webapps\ROOT\error.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\ParkSystem\src\main\webapp\error.html" afterPath="" />
-      <change type="DELETED" beforePath="C:\Java\ParkSystem\target\ParkSystem\error.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\ParkSystem\apache-tomcat-parksystem\webapps\ROOT\WEB-INF\classes\com\github\MaryHrisanfova\parksystem\controllers\EnterFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\ParkSystem\apache-tomcat-parksystem\webapps\ROOT\WEB-INF\classes\com\github\MaryHrisanfova\parksystem\controllers\LenguageFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\ParkSystem\src\main\java\com\github\MaryHrisanfova\parksystem\controllers\EnterFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\ParkSystem\src\main\java\com\github\MaryHrisanfova\parksystem\controllers\LenguageFilter.java" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\ParkSystem\target\ParkSystem\WEB-INF\classes\com\github\MaryHrisanfova\parksystem\controllers\EnterFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\ParkSystem\target\ParkSystem\WEB-INF\classes\com\github\MaryHrisanfova\parksystem\controllers\LenguageFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\ParkSystem\target\classes\com\github\MaryHrisanfova\parksystem\controllers\EnterFilter.class" afterPath="" />
+      <change type="DELETED" beforePath="C:\Java\ParkSystem\target\classes\com\github\MaryHrisanfova\parksystem\controllers\LenguageFilter.class" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/AddTaskServlet.class" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/AddTaskServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/AddTaskServlet.class" afterPath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/AddTaskServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/controllers/AddTaskServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/controllers/AddTaskServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/dao/DBConnection.class" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/dao/DBConnection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/dao/DBConnection.class" afterPath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/dao/DBConnection.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/dao/DBConnection.class" afterPath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/dao/DBConnection.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/DelTaskServlet.class" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/DelTaskServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/DelTaskServlet.class" afterPath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/DelTaskServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/controllers/DelTaskServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/controllers/DelTaskServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/EditIsDoneTaskServlet.class" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/EditIsDoneTaskServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/EditIsDoneTaskServlet.class" afterPath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/EditIsDoneTaskServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/controllers/EditIsDoneTaskServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/controllers/EditIsDoneTaskServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/EditTaskServlet.class" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/EditTaskServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/EditTaskServlet.class" afterPath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/EditTaskServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/controllers/EditTaskServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/controllers/EditTaskServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/EnterFilter.class" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/EnterFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/EnterFilter.class" afterPath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/EnterFilter.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/controllers/EnterFilter.class" afterPath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/controllers/EnterFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/Index.class" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/Index.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/Index.class" afterPath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/Index.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/controllers/Index.class" afterPath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/controllers/Index.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/LogoutServlet.class" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/LogoutServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/LogoutServlet.class" afterPath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/LogoutServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/controllers/LogoutServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/controllers/LogoutServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem.war" afterPath="$PROJECT_DIR$/target/ParkSystem.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/SeePagesFilter.class" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/SeePagesFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/SeePagesFilter.class" afterPath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/SeePagesFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/controllers/SeePagesFilter.class" afterPath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/controllers/SeePagesFilter.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/SeeTasksServlet.class" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/SeeTasksServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/SeeTasksServlet.class" afterPath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/SeeTasksServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/controllers/SeeTasksServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/controllers/SeeTasksServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/SeeUsersServlet.class" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/SeeUsersServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/SeeUsersServlet.class" afterPath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/SeeUsersServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/controllers/SeeUsersServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/controllers/SeeUsersServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/model/Task.class" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/model/Task.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/model/Task.class" afterPath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/model/Task.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/model/Task.class" afterPath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/model/Task.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/dao/TaskDAO.class" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/dao/TaskDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/dao/TaskDAO.class" afterPath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/dao/TaskDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/dao/TaskDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/dao/TaskDAO.class" />
@@ -40,41 +60,58 @@
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/UserServlet.class" afterPath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/com/github/MaryHrisanfova/parksystem/controllers/UserServlet.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/controllers/UserServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/github/MaryHrisanfova/parksystem/controllers/UserServlet.class" />
       <change type="MODIFICATION" beforePath="C:\Java\ParkSystem\src\main\java\com\github\MaryHrisanfova\parksystem\controllers\AddTaskServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/AddTaskServlet.java" />
+      <change type="MODIFICATION" beforePath="C:\Java\ParkSystem\src\main\java\com\github\MaryHrisanfova\parksystem\dao\DBConnection.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/dao/DBConnection.java" />
       <change type="MODIFICATION" beforePath="C:\Java\ParkSystem\src\main\java\com\github\MaryHrisanfova\parksystem\controllers\DelTaskServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/DelTaskServlet.java" />
+      <change type="MODIFICATION" beforePath="C:\Java\ParkSystem\src\main\java\com\github\MaryHrisanfova\parksystem\controllers\EditIsDoneTaskServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/EditIsDoneTaskServlet.java" />
       <change type="MODIFICATION" beforePath="C:\Java\ParkSystem\src\main\java\com\github\MaryHrisanfova\parksystem\controllers\EditTaskServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/EditTaskServlet.java" />
-      <change type="MODIFICATION" beforePath="C:\Java\ParkSystem\src\main\java\com\github\MaryHrisanfova\parksystem\controllers\EnterFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/EnterFilter.java" />
+      <change type="MODIFICATION" beforePath="C:\Java\ParkSystem\src\main\java\com\github\MaryHrisanfova\parksystem\controllers\Index.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/Index.java" />
       <change type="MODIFICATION" beforePath="C:\Java\ParkSystem\src\main\java\com\github\MaryHrisanfova\parksystem\controllers\LogoutServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/LogoutServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ParkSystem.iml" afterPath="$PROJECT_DIR$/ParkSystem.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/ParkSystem_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/ParkSystem_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="MODIFICATION" beforePath="C:\Java\ParkSystem\src\main\java\com\github\MaryHrisanfova\parksystem\controllers\SeePagesFilter.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/SeePagesFilter.java" />
       <change type="MODIFICATION" beforePath="C:\Java\ParkSystem\src\main\java\com\github\MaryHrisanfova\parksystem\controllers\SeeTasksServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/SeeTasksServlet.java" />
       <change type="MODIFICATION" beforePath="C:\Java\ParkSystem\src\main\java\com\github\MaryHrisanfova\parksystem\controllers\SeeUsersServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/SeeUsersServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/model/Task.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/model/Task.java" />
       <change type="MODIFICATION" beforePath="C:\Java\ParkSystem\src\main\java\com\github\MaryHrisanfova\parksystem\dao\TaskDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/dao/TaskDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/model/User.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/model/User.java" />
       <change type="MODIFICATION" beforePath="C:\Java\ParkSystem\src\main\java\com\github\MaryHrisanfova\parksystem\dao\UserDAO.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/dao/UserDAO.java" />
       <change type="MODIFICATION" beforePath="C:\Java\ParkSystem\src\main\java\com\github\MaryHrisanfova\parksystem\controllers\UserServlet.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/UserServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/addNewUser.jsp" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/addNewUser.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/addNewUser.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/addNewUser.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/addNewUser.jsp" afterPath="$PROJECT_DIR$/target/ParkSystem/addNewUser.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/addTask.jsp" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/addTask.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/addTask.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/addTask.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/addTask.jsp" afterPath="$PROJECT_DIR$/target/ParkSystem/addTask.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/delTask.jsp" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/delTask.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/delTask.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/delTask.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/delTask.jsp" afterPath="$PROJECT_DIR$/target/ParkSystem/delTask.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/editIsDone.jsp" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/editIsDone.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/editIsDone.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/editIsDone.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/editIsDone.jsp" afterPath="$PROJECT_DIR$/target/ParkSystem/editIsDone.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/editTask.jsp" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/editTask.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/editTask.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/editTask.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/editTask.jsp" afterPath="$PROJECT_DIR$/target/ParkSystem/editTask.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/error.jsp" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/error.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/error.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/error.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/error.jsp" afterPath="$PROJECT_DIR$/target/ParkSystem/error.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/index.jsp" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/index.jsp" afterPath="$PROJECT_DIR$/target/ParkSystem/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/local.properties" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/local.properties" afterPath="$PROJECT_DIR$/src/main/resources/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/local.properties" afterPath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/local.properties" afterPath="$PROJECT_DIR$/target/classes/local.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/local_en.properties" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/local_en.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/local_en.properties" afterPath="$PROJECT_DIR$/src/main/resources/local_en.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/local_en.properties" afterPath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/local_en.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/local_en.properties" afterPath="$PROJECT_DIR$/target/classes/local_en.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/local_ru.properties" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/classes/local_ru.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/local_ru.properties" afterPath="$PROJECT_DIR$/src/main/resources/local_ru.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/local_ru.properties" afterPath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/classes/local_ru.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/local_ru.properties" afterPath="$PROJECT_DIR$/target/classes/local_ru.properties" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/conf/server.xml" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/conf/server.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/tasks.jsp" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/tasks.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/tasks.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/tasks.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/tasks.jsp" afterPath="$PROJECT_DIR$/target/ParkSystem/tasks.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/users.jsp" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/users.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/users.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/users.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/users.jsp" afterPath="$PROJECT_DIR$/target/ParkSystem/users.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/ParkSystem/WEB-INF/web.xml" />
@@ -102,12 +139,82 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+      <file leaf-file-name="EditIsDoneTaskServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/EditIsDoneTaskServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.75170845">
-              <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="65" column="122" selection-start-line="65" selection-start-column="122" selection-end-line="65" selection-end-column="122" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AddTaskServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/AddTaskServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="117" column="13" selection-start-line="117" selection-start-column="13" selection-end-line="117" selection-end-column="13" />
+              <folding>
+                <element signature="e#1738#1744#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Index.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/Index.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="45" column="45" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditTaskServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/EditTaskServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="94" column="122" selection-start-line="94" selection-start-column="122" selection-end-line="94" selection-end-column="122" />
+              <folding>
+                <element signature="e#1808#1814#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="DelTaskServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/DelTaskServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LogoutServlet.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/LogoutServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserServlet.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/UserServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5225376">
+              <caret line="64" column="26" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -115,9 +222,11 @@
       <file leaf-file-name="SeePagesFilter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/SeePagesFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-4.105263">
-              <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
-              <folding />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -125,10 +234,10 @@
       <file leaf-file-name="SeeTasksServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/SeeTasksServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.8421054">
-              <caret line="69" column="73" selection-start-line="69" selection-start-column="73" selection-end-line="69" selection-end-column="73" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
               <folding>
-                <element signature="e#1365#1371#0" expanded="true" />
+                <element signature="e#1484#1490#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -137,77 +246,8 @@
       <file leaf-file-name="SeeUsersServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/SeeUsersServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="11.368421">
-              <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/UserServlet.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.736842">
-              <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="local.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
-          <provider editor-type-id="ResourceBundle">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.4736843">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editTask.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/editTask.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.967742">
-              <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="local_en.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/local_en.properties">
-          <provider editor-type-id="ResourceBundle">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.4736843">
-              <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="local_ru.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/local_ru.properties">
-          <provider editor-type-id="ResourceBundle">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-3.4736843">
-              <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editIsDone.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/editIsDone.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-0.7096774">
-              <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
               <folding />
             </state>
           </provider>
@@ -230,18 +270,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/Controllers/UserServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/Dao/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/LoginFilter.java" />
-        <option value="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/dao/DBConnection.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/model/Task.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/MakeUserInfoFilter.java" />
-        <option value="$PROJECT_DIR$/apache-tomcat-parksystem/conf/server.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/dao/TaskDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/dao/UserDAO.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/model/User.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/In18nClass.java" />
         <option value="$PROJECT_DIR$/src/properties/Words_en_US" />
         <option value="$PROJECT_DIR$/src/properties/Words_ru_RU" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/In18nFilter.java" />
@@ -255,32 +283,44 @@
         <option value="$PROJECT_DIR$/src/Words_en_US.properties" />
         <option value="$PROJECT_DIR$/src/Words.properties" />
         <option value="$PROJECT_DIR$/src/Words_ru_RU.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/LogoutServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/LenguageFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/Index.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/SeeTasksServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/UserServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/addNewUser.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/AddTaskServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/DelTaskServlet.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/delTask.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/addTask.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/EditTaskServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/EditIsDoneTaskServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/error.html" />
-        <option value="$PROJECT_DIR$/src/main/webapp/error.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/users.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/tasks.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/model/Task.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/dao/DBConnection.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/LenguageFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/UserServlet.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/LanguageChangeServlet.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/EnterFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/SeePagesFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/SeeUsersServlet.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/editTask.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/editIsDone.jsp" />
-        <option value="$PROJECT_DIR$/src/main/resources/local.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/local_en.properties" />
-        <option value="$PROJECT_DIR$/src/main/resources/local_ru.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/apache-tomcat-parksystem/webapps/ROOT/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/error.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/SeeUsersServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/error.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/model/User.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/dao/UserDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/LogoutFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/addTask.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/dao/TaskDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/AddTaskServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/editTask.jsp" />
+        <option value="$PROJECT_DIR$/src/main/resources/local_en.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/local.properties" />
+        <option value="$PROJECT_DIR$/src/main/resources/local_ru.properties" />
+        <option value="$PROJECT_DIR$/src/main/webapp/tasks.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/logout.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/ok.jsp" />
+        <option value="$PROJECT_DIR$/src/main/webapp/editIsDone.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/DelTaskServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/EditIsDoneTaskServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/EditTaskServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/Index.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/LogoutServlet.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/SeePagesFilter.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/SeeTasksServlet.java" />
       </list>
     </option>
   </component>
@@ -318,19 +358,9 @@
           <option name="myItemId" value="ParkSystem Maven Webapp" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
         </PATH_ELEMENT>
-      </PATH>
-      <PATH>
         <PATH_ELEMENT>
-          <option name="myItemId" value="" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="ParkSystem Maven Webapp" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Plugins" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+          <option name="myItemId" value="Dependencies" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
@@ -341,14 +371,6 @@
         <PATH_ELEMENT>
           <option name="myItemId" value="ParkSystem Maven Webapp" />
           <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="Plugins" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
-        </PATH_ELEMENT>
-        <PATH_ELEMENT>
-          <option name="myItemId" value="resources" />
-          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginNode" />
         </PATH_ELEMENT>
       </PATH>
       <PATH>
@@ -418,8 +440,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -500,6 +520,28 @@
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParkSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParkSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="Resource Bundle 'local'" />
               <option name="myItemType" value="com.intellij.lang.properties.projectView.ResourceBundleNode" />
@@ -528,6 +570,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="parksystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParkSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ParkSystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="parksystem" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -563,16 +639,18 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="F:/Projects/Java.SE.03/task3-2" />
+    <property name="last_opened_file_path" value="F:/dao/TaskDAO.java" />
     <property name="FullScreen" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
@@ -581,6 +659,13 @@
     <property name="OverrideImplement.overriding.sorted" value="false" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
     <property name="SearchEverywhereHistoryKey" value="error&#9;PSI&#9;JAVA://java.lang.Error" />
+    <property name="GenerateAntBuildDialog.generateSingleFile" value="false" />
+    <property name="GenerateAntBuildDialog.enableUiFormCompile" value="true" />
+    <property name="GenerateAntBuildDialog.forceTargetJdk" value="true" />
+    <property name="GenerateAntBuildDialog.backupFiles" value="true" />
+    <property name="GenerateAntBuildDialog.inclineRuntiemClasspath" value="false" />
+    <property name="GenerateAntBuildDialog.generateIdeaHomeProperty" value="false" />
+    <property name="GenerateAntBuildDialog.outputFileNameProperty" value="parksystem" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -905,16 +990,17 @@
       <workItem from="1447951461107" duration="11002000" />
       <workItem from="1447967447900" duration="21000" />
       <workItem from="1448039585908" duration="15771000" />
-      <workItem from="1448098027564" duration="23759000" />
+      <workItem from="1448098027564" duration="35142000" />
+      <workItem from="1448181404799" duration="33285000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="221368000" />
+    <option name="totallyTimeSpent" value="266036000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-11" y="-11" width="1942" height="1042" extended-state="7" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -923,18 +1009,18 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295063" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.41676235" sideWeight="0.5042965" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.1084855" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1944146" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295063" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.37428242" sideWeight="0.49570355" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.26980484" sideWeight="0.49570355" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.150913" sideWeight="0.884" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.1895811" sideWeight="0.884" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18098818" sideWeight="0.116" order="5" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32975295" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.39924434" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -959,416 +1045,442 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="10" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
+    <entry file="jar://$PROJECT_DIR$/../jdk1.7.0_80/src.zip!/java/lang/Error.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/log4j.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="10" column="56" selection-start-line="10" selection-start-column="56" selection-end-line="10" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../jdk1.7.0_80/src.zip!/java/lang/Throwable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1882494">
+          <caret line="818" column="45" selection-start-line="818" selection-start-column="45" selection-end-line="818" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/dao/DBConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/addNewUser.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7340909">
+          <caret line="16" column="76" selection-start-line="16" selection-start-column="76" selection-end-line="16" selection-end-column="76" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/LogoutServlet.java">
+    <entry file="file://F:/dao/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="2" selection-start-line="14" selection-start-column="2" selection-end-line="14" selection-end-column="2" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
+          <caret line="25" column="7" selection-start-line="24" selection-start-column="4" selection-end-line="25" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apache-tomcat-parksystem/conf/context.xml">
+    <entry file="file://F:/dao/TaskDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="30" selection-end-column="8" />
+        <state vertical-scroll-proportion="-10.303609">
+          <caret line="27" column="7" selection-start-line="26" selection-start-column="4" selection-end-line="27" selection-end-column="7" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+    <entry file="file://F:/model/User.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.6624204">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/model/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.772824">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/controllers/AddTaskServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.4755839">
+          <caret line="52" column="7" selection-start-line="47" selection-start-column="4" selection-end-line="52" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/controllers/DelTaskServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.5690022">
+          <caret line="35" column="23" selection-start-line="35" selection-start-column="23" selection-end-line="35" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/controllers/EditIsDoneTaskServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46496814">
+          <caret line="87" column="21" selection-start-line="87" selection-start-column="21" selection-end-line="87" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/controllers/EditTaskServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.74734604">
+          <caret line="26" column="16" selection-start-line="26" selection-start-column="16" selection-end-line="26" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/controllers/EnterFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.82165605">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="42" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/controllers/LogoutServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.18683651">
+          <caret line="11" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="14" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/controllers/SeePagesFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.3630574">
+          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="15" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/controllers/SeeTasksServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.8492569">
+          <caret line="29" column="35" selection-start-line="29" selection-start-column="35" selection-end-line="29" selection-end-column="35" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/controllers/SeeUsersServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.9893843">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="26" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://F:/controllers/UserServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="38" selection-start-line="0" selection-start-column="38" selection-end-line="0" selection-end-column="38" />
-          <folding />
+          <caret line="29" column="26" selection-start-line="29" selection-start-column="26" selection-end-line="29" selection-end-column="26" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/users.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParkSystem.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="-8.419354">
+          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParkSystem.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="19" column="26" selection-start-line="19" selection-start-column="26" selection-end-line="19" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParkSystem.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ParkSystem.iml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="27" column="26" selection-start-line="27" selection-start-column="26" selection-end-line="27" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.67706424">
-          <caret line="61" column="10" selection-start-line="61" selection-start-column="10" selection-end-line="61" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../jdk1.7.0_80/src.zip!/java/sql/ResultSet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4017857">
-          <caret line="260" column="7" selection-start-line="260" selection-start-column="7" selection-end-line="260" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-web-api/6.0/javaee-web-api-6.0.jar!/javax/servlet/http/HttpServletRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33193278">
-          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../jdk1.7.0_80/src.zip!/java/util/List.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3326923">
-          <caret line="234" column="12" selection-start-line="234" selection-start-column="12" selection-end-line="234" selection-end-column="12" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/dao/DBConnection.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/javax/javaee-web-api/6.0/javaee-web-api-6.0.jar!/javax/servlet/ServletRequest.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.36091954">
-          <caret line="35" column="11" selection-start-line="35" selection-start-column="11" selection-end-line="35" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/model/Task.java">
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="135" column="26" selection-start-line="135" selection-start-column="26" selection-end-line="135" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/apache-tomcat-parksystem/conf/server.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="80" column="18" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/dao/TaskDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="234" column="39" selection-start-line="234" selection-start-column="39" selection-end-line="234" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/dao/UserDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="108" column="107" selection-start-line="108" selection-start-column="107" selection-end-line="108" selection-end-column="107" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/model/User.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="65" column="0" selection-start-line="65" selection-start-column="0" selection-end-line="65" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$PROJECT_DIR$/../jdk1.7.0_80/src.zip!/java/util/ResourceBundle.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="418" column="59" selection-start-line="418" selection-start-column="59" selection-end-line="418" selection-end-column="59" />
+          <caret line="52" column="0" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/apache-tomcat-parksystem/conf/context.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/model/User.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="37" column="10" selection-start-line="37" selection-start-column="10" selection-end-line="37" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/addTask.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-43.29032">
-          <caret line="61" column="35" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="35" />
-          <folding />
+          <caret line="79" column="81" selection-start-line="79" selection-start-column="81" selection-end-line="79" selection-end-column="81" />
+          <folding>
+            <element signature="e#1079#1080#0" expanded="false" />
+            <element signature="e#1121#1122#0" expanded="false" />
+            <element signature="e#1163#1164#0" expanded="false" />
+            <element signature="e#1197#1198#0" expanded="false" />
+            <element signature="e#1352#1353#0" expanded="false" />
+            <element signature="e#1383#1384#0" expanded="false" />
+            <element signature="e#1419#1420#0" expanded="false" />
+            <element signature="e#1451#1452#0" expanded="false" />
+            <element signature="e#1487#1488#0" expanded="false" />
+            <element signature="e#1519#1520#0" expanded="false" />
+            <element signature="e#1551#1552#0" expanded="false" />
+            <element signature="e#1579#1580#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/delTask.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-22.709677">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
+        <state vertical-scroll-proportion="-13.645162">
+          <caret line="35" column="7" selection-start-line="35" selection-start-column="7" selection-end-line="35" selection-end-column="7" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/users.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/model/Task.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.6268656">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="18" selection-end-line="15" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/tasks.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/dao/TaskDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.4492755">
-          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="253" column="37" selection-start-line="253" selection-start-column="15" selection-end-line="253" selection-end-column="37" />
+          <folding>
+            <element signature="e#894#895#0" expanded="true" />
+            <element signature="e#938#939#0" expanded="true" />
+            <element signature="e#10025#10026#0" expanded="true" />
+            <element signature="e#10059#10060#0" expanded="true" />
+            <marker date="1448218113873" expanded="true" signature="-1:-1" placeholder="SELECT tasks..tasks..." />
+            <marker date="1448218113873" expanded="true" signature="-1:-1" placeholder="SELECT tasks..tasks..." />
+            <marker date="1448218113873" expanded="true" signature="-1:-1" placeholder="SELECT tasks..tasks..." />
+            <marker date="1448218113873" expanded="true" signature="-1:-1" placeholder="SELECT id fr..users..." />
+            <marker date="1448218113873" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1448218113873" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1448218113873" expanded="true" signature="-1:-1" placeholder="UPDATE tasks..." />
+            <marker date="1448218113873" expanded="true" signature="-1:-1" placeholder="UPDATE tasks..." />
+            <marker date="1448218113873" expanded="true" signature="-1:-1" placeholder="SELECT id fr..users..." />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/addNewUser.jsp">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/dao/UserDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.1612904">
-          <caret line="5" column="6" selection-start-line="5" selection-start-column="6" selection-end-line="5" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="110" column="16" selection-start-line="110" selection-start-column="16" selection-end-line="110" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1448205440166" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1448205440166" expanded="true" signature="-1:-1" placeholder="select id fr..users..." />
+            <marker date="1448205440166" expanded="true" signature="-1:-1" placeholder="SELECT login..users..." />
+            <marker date="1448205440166" expanded="true" signature="-1:-1" placeholder="SELECT id,la..users..." />
+            <marker date="1448205440166" expanded="true" signature="-1:-1" placeholder="SELECT lastn..users..." />
+            <marker date="1448205440166" expanded="true" signature="-1:-1" placeholder="SELECT id,la..users..." />
+            <marker date="1448205440166" expanded="true" signature="-1:-1" placeholder="SELECT group..users..." />
+            <marker date="1448205440166" expanded="true" signature="-1:-1" placeholder="SELECT group..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/addTask.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-22.032259">
+          <caret line="57" column="48" selection-start-line="57" selection-start-column="48" selection-end-line="57" selection-end-column="48" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/error.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.225806">
-          <caret line="13" column="6" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
+        <state vertical-scroll-proportion="-10.645162">
+          <caret line="15" column="0" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../jdk1.7.0_80/src.zip!/java/lang/Error.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/logout.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/AddTaskServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.105263">
-          <caret line="25" column="10" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/DelTaskServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.2105263">
-          <caret line="59" column="0" selection-start-line="59" selection-start-column="0" selection-end-line="59" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/EditIsDoneTaskServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.736842">
-          <caret line="85" column="38" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/EditTaskServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5789475">
-          <caret line="86" column="49" selection-start-line="86" selection-start-column="46" selection-end-line="86" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/EnterFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5789475">
-          <caret line="46" column="0" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/Index.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="1" selection-start-line="23" selection-start-column="1" selection-end-line="23" selection-end-column="1" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/LenguageFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.736842">
-          <caret line="32" column="27" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="27" />
-          <folding>
-            <element signature="e#1282#1283#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/LogoutServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.105263">
-          <caret line="18" column="45" selection-start-line="18" selection-start-column="31" selection-end-line="18" selection-end-column="45" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/SeePagesFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.105263">
-          <caret line="47" column="47" selection-start-line="47" selection-start-column="47" selection-end-line="47" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/SeeTasksServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.8421054">
-          <caret line="69" column="73" selection-start-line="69" selection-start-column="73" selection-end-line="69" selection-end-column="73" />
-          <folding>
-            <element signature="e#1365#1371#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/SeeUsersServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="11.368421">
-          <caret line="40" column="47" selection-start-line="40" selection-start-column="47" selection-end-line="40" selection-end-column="47" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/UserServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.736842">
-          <caret line="67" column="0" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/editIsDone.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7096774">
-          <caret line="33" column="18" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.4736843">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/editTask.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.967742">
-          <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/local_en.properties">
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.4736843">
-          <caret line="6" column="30" selection-start-line="6" selection-start-column="30" selection-end-line="6" selection-end-column="30" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/local_ru.properties">
-      <provider editor-type-id="ResourceBundle">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.4736843">
-          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.6584507">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75170845">
-          <caret line="21" column="19" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        <state vertical-scroll-proportion="0.38732395">
+          <caret line="28" column="17" selection-start-line="28" selection-start-column="17" selection-end-line="28" selection-end-column="17" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/local_en.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4952199">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/local.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49019608">
+          <caret line="47" column="23" selection-start-line="47" selection-start-column="23" selection-end-line="47" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/local_ru.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.49019608">
+          <caret line="50" column="0" selection-start-line="50" selection-start-column="0" selection-end-line="50" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="ResourceBundle">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/tasks.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.35211268">
+          <caret line="31" column="14" selection-start-line="31" selection-start-column="14" selection-end-line="31" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/ok.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.354838">
+          <caret line="16" column="22" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/editIsDone.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-15.225806">
+          <caret line="48" column="23" selection-start-line="48" selection-start-column="23" selection-end-line="48" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/editTask.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.870968">
+          <caret line="90" column="17" selection-start-line="90" selection-start-column="17" selection-end-line="90" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/AddTaskServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="117" column="13" selection-start-line="117" selection-start-column="13" selection-end-line="117" selection-end-column="13" />
+          <folding>
+            <element signature="e#1738#1744#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/DelTaskServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="66" column="0" selection-start-line="66" selection-start-column="0" selection-end-line="66" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/EditIsDoneTaskServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="65" column="122" selection-start-line="65" selection-start-column="122" selection-end-line="65" selection-end-column="122" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/EditTaskServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="94" column="122" selection-start-line="94" selection-start-column="122" selection-end-line="94" selection-end-column="122" />
+          <folding>
+            <element signature="e#1808#1814#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/Index.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="45" column="45" selection-start-line="45" selection-start-column="45" selection-end-line="45" selection-end-column="45" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/LogoutServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="37" column="9" selection-start-line="37" selection-start-column="9" selection-end-line="37" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/SeePagesFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="31" column="0" selection-start-line="31" selection-start-column="0" selection-end-line="31" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/SeeTasksServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="54" selection-start-line="51" selection-start-column="54" selection-end-line="51" selection-end-column="54" />
+          <folding>
+            <element signature="e#1484#1490#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/SeeUsersServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="41" column="15" selection-start-line="41" selection-start-column="15" selection-end-line="41" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/MaryHrisanfova/parksystem/controllers/UserServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5225376">
+          <caret line="64" column="26" selection-start-line="64" selection-start-column="26" selection-end-line="64" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

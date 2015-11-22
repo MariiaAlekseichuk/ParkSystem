@@ -10,20 +10,24 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * Created by Маша on 15.11.2015.
+ * Регистрация нового пользователя
+ * @author Маша
+ * @since 15.11.2015.
  */
-@WebServlet (urlPatterns ="/addnewuser")
+@WebServlet(urlPatterns = "/addnewuser")
 public class UserServlet extends HttpServlet {
 
     private static final long serialVersionUID = 1L;
     private static String INSERT = "/addNewUser.jsp";
     private UserDAO dao;
 
-    //private static String UserRecord = "/addNewUser.jsp";
+    /**
+     * Конструктор создает объект класса UserDAO для отправки запросов в БД
+     * @see UserDAO
+     */
     public UserServlet() {
         super();
         dao = new UserDAO();
@@ -38,8 +42,7 @@ public class UserServlet extends HttpServlet {
         System.out.println(action);
         if (action != null) {
             doPost(request, response);
-        }
-        else {
+        } else {
             RequestDispatcher rd = request.getRequestDispatcher("addNewUser.jsp");
             rd.forward(request, response);
         }
@@ -50,20 +53,19 @@ public class UserServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         String redirect = "addNewUser.jsp";
 
-
         response.setContentType("text/html");
 
-            User user = new User();
-            user.setPassword(request.getParameter("login"));
-            user.setLogin(request.getParameter("password"));
-            user.setFirstname(request.getParameter("firstName"));
-            user.setLasttname(request.getParameter("lastName"));
-            user.setEmail(request.getParameter("email"));
+        User user = new User();
+        user.setPassword(request.getParameter("login"));
+        user.setLogin(request.getParameter("password"));
+        user.setFirstname(request.getParameter("firstName"));
+        user.setLasttname(request.getParameter("lastName"));
+        user.setEmail(request.getParameter("email"));
 
-            dao.addUser(user);
-        request.setAttribute("recordadded","✅");
-            request.getRequestDispatcher(redirect).forward(request, response);
-        }
+        dao.addUser(user);
+        request.setAttribute("recordadded", "✅");
+        request.getRequestDispatcher(redirect).forward(request, response);
+    }
 
 
 }

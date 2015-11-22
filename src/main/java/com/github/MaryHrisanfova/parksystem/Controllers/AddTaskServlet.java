@@ -1,5 +1,7 @@
 package com.github.MaryHrisanfova.parksystem.controllers;
 
+import com.github.MaryHrisanfova.parksystem.dao.DBConnection;
+import com.github.MaryHrisanfova.parksystem.dao.UserDAO;
 import com.github.MaryHrisanfova.parksystem.model.Task;
 import com.github.MaryHrisanfova.parksystem.dao.TaskDAO;
 
@@ -11,70 +13,116 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
+import java.util.List;
+
+import com.github.MaryHrisanfova.parksystem.model.User;
+import org.apache.log4j.Logger;
+
 /**
- * Created by Маша on 16.11.2015.
+ * Сервлет отвечает за добавление задания.
+ *
+ * @author Маша
+ * @since 16.11.2015.
  */
 @WebServlet(urlPatterns = "/add_task")
 public class AddTaskServlet extends HttpServlet {
-    private TaskDAO dao;
+    final static Logger logger = Logger.getLogger(DBConnection.class);
 
+    private TaskDAO dao;
+    private UserDAO daoUser;
+    private UserDAO daoCurrentUser;
+    private User currentUser;
+
+    /**
+     * Конструктор создает объект класса TaskDAO для отправки запросов в БД
+     *
+     * @see TaskDAO
+     */
     public AddTaskServlet() {
         super();
         dao = new TaskDAO();
+        daoUser = new UserDAO();
+        daoCurrentUser=new UserDAO();
+        currentUser=new User();
     }
 
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        request.setCharacterEncoding("utf-8");//Для отправки русских букв
-        ServletContext context = getServletContext();
-/*
-        try {
-            canISeePage(request,response,context);
-        }
-        catch (IOException e){
 
+        ServletContext context = getServletContext();
+        request.setCharacterEncoding("utf-8");//Для отправки русских букв
+
+        List<User> users = new ArrayList<User>();
+        daoUser.getUsersFLnamesAndID(users);
+        request.setAttribute("users", users);
+
+        currentUser=daoCurrentUser.getUserByLogin((String) request.getSession(true).getAttribute("login"));
+
+        request.setAttribute("currentUser", currentUser);
+
+        String action = request.getParameter("action");
+        if (action != null) {
+            doPost(request, response);
+
+        } else {
+            RequestDispatcher rd = request.getRequestDispatcher("addTask.jsp");
+            rd.forward(request, response);
         }
-        doPost(request, response);
-*/
     }
 
+
+    /**
+     * Считывание значений из полей формы после нажатия кнопки.
+     * Отправка запроса в БД на добавление пользователя.
+     *
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+
+        System.out.println("in post");
+
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html");
         request.setAttribute("taskWasAdded", "");
         String redirect = "addTask.jsp";
 
-        System.out.println("select"+request.getParameter("select1"));
+        Task task = new Task();
 
-        String action = request.getParameter("action");
-        if (action.equalsIgnoreCase("insert")) {
-            Task task = new Task();
+        task.setTasktype(request.getParameter("taskType"));
+        task.setTasktext(request.getParameter("taskText"));
+        task.setFirstnameOfSender(currentUser.getFirstname());
+        task.setLastnameOfSender(currentUser.getLasttname());
+        task.setFirstnameOfRecipient(daoUser.getUserById(Integer.parseInt(request.getParameter("FLNamesRecipient"))).getFirstname());
+        task.setLastnameOfRecipient(daoUser.getUserById(Integer.parseInt(request.getParameter("FLNamesRecipient"))).getLasttname());
 
-            task.setTasktype(request.getParameter("taskType"));
-            task.setTasktext(request.getParameter("taskText"));
-            task.setFirstnameOfSender(request.getParameter("firstNameOfSender"));
-            task.setLastnameOfSender(request.getParameter("lastNameOfSender"));
-            task.setFirstnameOfRecipient(request.getParameter("firstNameOfRecipient"));
-            task.setLastnameOfRecipient(request.getParameter("lastNameOfRecipient"));
+        //Найдем id получателя и отправителя и запишем в поле объекта dao
+        if (task.getFirstnameOfSender().equals("") | task.getLastnameOfSender().equals("") |
+                task.getTasktype().equals("") | task.getTasktext().equals("") |
+                task.getFirstnameOfRecipient().equals("") |
+                task.getLastnameOfRecipient().equals("") == false) {
+            dao.setIdSender(currentUser.getId());
+            dao.setIdRecipient(Integer.parseInt(request.getParameter("FLNamesRecipient")));
+            if (dao.getIdSender() != 0 & dao.getIdRecipient() != 0) {
+                dao.addTask(task);
 
-            //Найдем id получателя и отправителя и запишем в поле объекта dao
-            if (task.getFirstnameOfSender().equals("") | task.getLastnameOfSender().equals("") |
-                    task.getTasktype().equals("") | task.getTasktext().equals("") |
-                    task.getFirstnameOfRecipient().equals("") |
-                    task.getLastnameOfRecipient().equals("") == false) {
-                dao.setIdSender(dao.getUserIdByFLnames(task.getFirstnameOfSender(), task.getLastnameOfSender()));
-                dao.setIdRecipient(dao.getUserIdByFLnames(task.getFirstnameOfRecipient(), task.getLastnameOfRecipient()));
-                if (dao.getIdSender() != 0 & dao.getIdRecipient() != 0) {
-                    dao.addTask(task);
-                    request.setAttribute("taskWasAdded", "Задача добавлена");
-                }
-                //  request.setAttribute("user", dao.getUserIdByFLnames(request.getParameter("firstName"), request.getParameter("lastName")));
+                request.setAttribute("taskWasAdded", "✅");
+
+
+            } else {
+                logger.error("Не удалось найти пользователя с указанными ФИО" + task.getFirstnameOfSender() + task.getLastnameOfSender() +
+                        " или" +
+                        task.getFirstnameOfRecipient() + task.getLastnameOfRecipient());
             }
-
         }
-        RequestDispatcher rd = request.getRequestDispatcher(redirect);
+
+       RequestDispatcher rd = request.getRequestDispatcher("ok.jsp");
         rd.forward(request, response);
+
+
+
     }
 
 }

@@ -1,7 +1,9 @@
 package com.github.MaryHrisanfova.parksystem.model;
 
-/**
- * Created by Маша on 14.11.2015.
+/**Класс, отвечающий за задания. С
+ * Содержит только getters и setters для полей класса
+ * @author Маша
+ * @since 14.11.2015.
  */
 public class Task {
     private int taskid;

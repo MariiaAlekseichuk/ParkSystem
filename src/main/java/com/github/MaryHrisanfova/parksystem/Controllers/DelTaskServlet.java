@@ -1,7 +1,6 @@
 package com.github.MaryHrisanfova.parksystem.controllers;
 
 import com.github.MaryHrisanfova.parksystem.dao.TaskDAO;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
@@ -13,18 +12,29 @@ import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
 /**
- * Created by Маша on 16.11.2015.
+ * Сервлет отвечает за удаление задания.
+ * @author Маша
+ * @since 16.11.2015.
  */
 @WebServlet(urlPatterns = "/delete_task")
 public class DelTaskServlet extends HttpServlet {
     private TaskDAO dao;
     int id;
 
+    /**
+     * Конструктор создает объект класса TaskDAO для отправки запросов в БД
+     * @see TaskDAO
+     */
     public DelTaskServlet() {
         super();
         dao = new TaskDAO();
     }
 
+    /**
+     * После нажатия кнопки - отправка на страницу delTask.jsp для подтверждения удаления.
+     * @throws ServletException
+     * @throws IOException
+     */
     @Override
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ServletContext context = getServletContext();
@@ -54,7 +64,7 @@ public class DelTaskServlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-        System.out.println("in post");
+
         request.setCharacterEncoding("utf-8");
         response.setContentType("text/html");
 

@@ -10,71 +10,49 @@ import java.sql.SQLException;
 import java.util.List;
 
 import static com.github.MaryHrisanfova.parksystem.dao.DBConnection.getConnection;
-
-/**
- * Created by Маша on 14.11.2015.
+import org.apache.log4j.Logger;
+/**Класс для извлечения информации о пользователях,
+ * содержащейся в таблицах park.users и park.task
+ * Все методы класса содержат соответсвующий SQL-запрос
+ * @exception SQLException во время выполнения запросов.
+ * @see SQLException
+ * @author Маша
+ * @since 14.11.2015.
  */
 public class UserDAO {
+    final static Logger logger = Logger.getLogger(DBConnection.class);
     private Connection connection;
 
+    /**Конструктор создает подключение к пулу соединений
+     */
     public UserDAO() {
-        try {
             connection = getConnection();
-        } catch (NamingException e) {
-            e.printStackTrace();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-    }
-/*
-    public String getGroupID(String userGroup) {
-        try {
-            String query = "SELECT id FROM groups WHERE groups.groupname=?";
-            PreparedStatement preparedStatment = connection.prepareStatement(query);
-            preparedStatment.setString(1, userGroup);
-            preparedStatment.executeUpdate();
-        } catch (SQLException e) {
-        }
     }
 
-    */
 
-
-    /*
-        public String setAttributeGroupID(int userGroupId) {
-            String userGroup="";
-            try {
-                String query = "SELECT groupname FROM groups WHERE groups.id=?";
-                PreparedStatement preparedStatment = connection.prepareStatement(query);
-                preparedStatment.setInt(1, userGroupId);
-                ResultSet rs = preparedStatment.executeQuery();
-                userGroup=rs.getString(1);
-            } catch (SQLException e) {
-            }
-            return userGroup;
-        }
-    */
     public void addUser(User user) {
+
+        String query = "INSERT INTO users (login,password,firstname,lastname,email) VALUES (?,?,?,?,?)";
+
         try {
-            // String query = "INSERT INTO users (login,firstname,lastname,email,groupid) VALUES (?,?,?,?,?)";
-            String query = "INSERT INTO users (login,password,firstname,lastname,email) VALUES (?,?,?,?,?)";
-            // String query = "INSERT INTO users (login) VALUES (?)";
             PreparedStatement preparedStatment = connection.prepareStatement(query);
+
             preparedStatment.setString(1, user.getLogin());
             preparedStatment.setString(2, user.getPassword());
             preparedStatment.setString(3, user.getFirstname());
             preparedStatment.setString(4, user.getLasttname());
             preparedStatment.setString(5, user.getEmail());
 
-            // preparedStatment.setString(5, user.getGroup());
-
             preparedStatment.executeUpdate();
 
         } catch (SQLException e) {
-            e.printStackTrace();
+            logger.error("Не удалось выполнить SQL-запрос" + query);
         }
     }
 
+   /** Сравнивает введенные пользователем в форме входа данные (логин, пароль)
+    * с данными в БД - таблице users.
+    */
     public boolean isUserCorrect(String login, String password) {
 
         if (login == null || password == null)
@@ -95,6 +73,7 @@ public class UserDAO {
             else
                 return false;
         } catch (SQLException e) {
+            logger.error("Не удалось выполнить SQL-запрос" + query);
             throw new RuntimeException(e);
         }
         if (result != 0) {
@@ -105,8 +84,11 @@ public class UserDAO {
     }
 
     public List<User> getAllUser(List<User> users) {
+
+        String query = "SELECT login,password,firstname,lastname,email,groupid FROM users ORDER BY lastname";
+
         try {
-            String query = "SELECT login,password,firstname,lastname,email,groupid FROM users ORDER BY lastname";
+
             PreparedStatement preparedStatment = connection.prepareStatement(query);
             ResultSet resultSet = preparedStatment.executeQuery();
 
@@ -117,25 +99,133 @@ public class UserDAO {
             preparedStatment.close();
 
         } catch (SQLException e) {
+            logger.error("Не удалось выполнить SQL-запрос" + query);
         }
         return users;
     }
 
-    public int getGroupId(String login) {
-        int groupid=0;
-        try {
-            String query = "SELECT groupid FROM users WHERE login=?";
-            PreparedStatement preparedStatment = connection.prepareStatement(query);
-            preparedStatment.setString(1, login);
-            ResultSet resultSet = preparedStatment.executeQuery();
 
+
+
+
+    public void getUsersFLnamesAndID(List<User> users) {
+
+        String query = "SELECT id,lastname,firstname FROM users ORDER BY lastname";
+
+        try {
+
+            PreparedStatement preparedStatment = connection.prepareStatement(query);
+            ResultSet resultSet = preparedStatment.executeQuery();
             while (resultSet.next()) {
-                groupid=resultSet.getInt("groupid");
+               users.add(new User(resultSet.getInt(1),resultSet.getString("lastname"),resultSet.getString("firstname")));
             }
             resultSet.close();
             preparedStatment.close();
 
         } catch (SQLException e) {
+            logger.error("Не удалось выполнить SQL-запрос" + query);
+        }
+    }
+
+
+    public User getUserById(int id) {
+        User user=new User();
+        String query = "SELECT lastname,firstname from users WHERE id=?";
+        try {
+
+            PreparedStatement preparedStatment = connection.prepareStatement(query);
+            preparedStatment.setInt(1, id);
+            ResultSet resultSet = preparedStatment.executeQuery();
+            while (resultSet.next()) {
+                user.setLasttname(resultSet.getString("lastname"));
+                user.setFirstname(resultSet.getString("firstname"));
+            }
+
+            if (id == 0) {
+
+                SQLException e;
+            }
+
+            resultSet.close();
+            preparedStatment.close();
+
+        } catch (SQLException e) {
+            logger.error("Не удалось выполнить SQL-запрос" + query);
+        }
+
+        return user;
+    }
+
+
+
+    public User getUserByLogin(String login) {
+        User user=new User();
+        String query = "SELECT id,lastname,firstname from users WHERE login=?";
+        try {
+
+            PreparedStatement preparedStatment = connection.prepareStatement(query);
+            preparedStatment.setString(1, login);
+            ResultSet resultSet = preparedStatment.executeQuery();
+            while (resultSet.next()) {
+                user.setId(resultSet.getInt("id"));
+                user.setLasttname(resultSet.getString("lastname"));
+                user.setFirstname(resultSet.getString("firstname"));
+            }
+
+            resultSet.close();
+            preparedStatment.close();
+
+        } catch (SQLException e) {
+            logger.error("Не удалось выполнить SQL-запрос" + query);
+        }
+
+        return user;
+    }
+
+
+
+    public int getUserId(String login) {
+        int groupid = 0;
+
+        String query = "SELECT groupid FROM users WHERE login=?";
+
+        try {
+            PreparedStatement preparedStatment = connection.prepareStatement(query);
+            preparedStatment.setString(1, login);
+            ResultSet resultSet = preparedStatment.executeQuery();
+
+            while (resultSet.next()) {
+                groupid = resultSet.getInt("groupid");
+            }
+            resultSet.close();
+            preparedStatment.close();
+
+        } catch (SQLException e) {
+            logger.error("Не удалось выполнить SQL-запрос" + query);
+        }
+        return groupid;
+
+    }
+
+
+    public int getGroupId(String login) {
+        int groupid = 0;
+
+        String query = "SELECT groupid FROM users WHERE login=?";
+
+        try {
+            PreparedStatement preparedStatment = connection.prepareStatement(query);
+            preparedStatment.setString(1, login);
+            ResultSet resultSet = preparedStatment.executeQuery();
+
+            while (resultSet.next()) {
+                groupid = resultSet.getInt("groupid");
+            }
+            resultSet.close();
+            preparedStatment.close();
+
+        } catch (SQLException e) {
+            logger.error("Не удалось выполнить SQL-запрос" + query);
         }
         return groupid;
 

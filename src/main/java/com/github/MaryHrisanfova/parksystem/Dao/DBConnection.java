@@ -1,20 +1,36 @@
 package com.github.MaryHrisanfova.parksystem.dao;
+
+import org.apache.log4j.Logger;
+
 import java.sql.*;
 import javax.naming.*;
 import javax.sql.*;
-/**
- * Created by ���� on 11.11.2015.
+
+/** Класс содержит один метод, который создает новое подключение
+ * к базе данных
+ * @author Маша
+ * @since 11.11.2015.
  */
 public class DBConnection {
-    private static final long serialVersionUID=1L;
+    final static Logger logger = Logger.getLogger(DBConnection.class);
+    private static final long serialVersionUID = 1L;
 
-    public static Connection getConnection() throws SQLException, NamingException	{
-        DataSource ds=null;
+    public static Connection getConnection() {
+        DataSource ds = null;
 
-        Context envCtx = (Context) new InitialContext().lookup("java:/comp/env");
-        ds = (DataSource) envCtx.lookup("jdbc/ParkDB");
-        return ds.getConnection();
+        try {
+            Context envCtx = (Context) new InitialContext().lookup("java:/comp/env");
+            ds = (DataSource) envCtx.lookup("jdbc/ParkDB");
+        } catch (NamingException n) {
+            logger.error("Не разрешенное имя" + n.getRemainingName() + ". " + n);
+            return null;
+        }
 
-
+        try {
+            return ds.getConnection();
+        } catch (SQLException e) {
+            logger.error("Не удалось поключиться к базе данных:" + e);
+            return null;
+        }
     }
 }
