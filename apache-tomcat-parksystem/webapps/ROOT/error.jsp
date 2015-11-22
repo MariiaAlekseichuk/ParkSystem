@@ -8,6 +8,7 @@
   <fmt:setLocale value="${sessionScope.local}"/>
   <fmt:setBundle basename="local" var="loc"/>
   <fmt:message bundle="${loc}" key="local.nologin" var="nologin"></fmt:message>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
 <c:out value="${nologin}"/>

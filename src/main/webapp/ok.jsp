@@ -9,6 +9,7 @@
   <fmt:setBundle basename="local" var="loc"/>
   <fmt:message bundle="${loc}" key="local.ok" var="ok"></fmt:message>
   <fmt:message bundle="${loc}" key="local.back" var="back"></fmt:message>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
 <br><br>

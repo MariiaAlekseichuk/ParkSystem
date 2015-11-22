@@ -11,6 +11,7 @@
   <fmt:message bundle="${loc}" key="local.usersinfo" var="usersinfo"></fmt:message >
 
   <title>${usersinfo}</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
 <table border="1">

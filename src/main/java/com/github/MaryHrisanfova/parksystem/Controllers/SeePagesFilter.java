@@ -22,7 +22,6 @@ public class SeePagesFilter implements Filter {
 
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain filterChain) throws IOException, ServletException {
 
-        System.out.println("in filter");
         ServletContext context = config.getServletContext();
 
         HttpServletRequest httpServletRequest = (HttpServletRequest) servletRequest;

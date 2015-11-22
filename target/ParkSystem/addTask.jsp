@@ -18,6 +18,7 @@
     <fmt:message bundle="${loc}" key="local.back" var="back"></fmt:message>
 
     <title>${addnewtask}</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
 

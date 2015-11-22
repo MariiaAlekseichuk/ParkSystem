@@ -23,10 +23,11 @@
     <fmt:message bundle="${loc}" key="local.isconfirmed" var="isconfirmed"></fmt:message >
     <fmt:message bundle="${loc}" key="local.logoutbutton" var="logoutbutton"></fmt:message >
 
-
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
-<p><c:out value='${yourtasks}'/></p>
+<h1><c:out value="${yourtasks}"/></h1>
 
 <div align="right">
 <form action="logout.jsp">

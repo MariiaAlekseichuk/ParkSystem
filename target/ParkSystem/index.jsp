@@ -16,10 +16,11 @@
 
     <title><c:out value="${namesystem}"/></title>
 
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+
 </head>
 <body>
-<c:out value="${namesystem}"/>
-
+<h1><c:out value="${namesystem}"/></h1>
 
 <div align="right">
     <form name="Language choose" action="\index" method="get">

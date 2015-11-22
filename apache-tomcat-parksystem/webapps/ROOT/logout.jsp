@@ -11,6 +11,7 @@
   <fmt:message bundle="${loc}" key="local.back" var="back"></fmt:message>
   <fmt:message bundle="${loc}" key="local.main" var="main"></fmt:message>
 
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
 <br><br>
