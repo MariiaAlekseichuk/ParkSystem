@@ -37,15 +37,9 @@ public class Index extends HttpServlet {
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         ServletContext context = getServletContext();
+
         request.getSession(true).setAttribute("local", request.getParameter("local"));
         request.getRequestDispatcher("index.jsp").forward(request, response);
     }
 
-
-    public void logout(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException{
-        response.setContentType("text/html");
-        HttpSession session = request.getSession();
-        session.invalidate();
-        request.getRequestDispatcher("index.jsp").forward(request, response);
-    }
 }

@@ -13,15 +13,16 @@
 
   <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
-<body>
+<>
 <br><br>
 
 
-<c:out value="${logout}"/>
+<div align="center" ><c:out value="${logout}"/>
 
 <br><br>
 <form action="/index">
   <input type="submit" value="${main}">
 </form>
+</div>
 </body>
 </html>

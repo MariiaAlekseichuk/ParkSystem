@@ -17,63 +17,66 @@
     <fmt:message bundle="${loc}" key="local.done" var="done"></fmt:message>
     <fmt:message bundle="${loc}" key="local.back" var="back"></fmt:message>
 
-    <title>${addnewtask}</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <h1 align="center"><title>${addnewtask}</title></h1>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
+<div align="center">
+    <form method="post" action='\add_task' name="AddTask">
+        <p><b>${addnewtask}</b></p>
+        <table border="1">
 
-<form method="post" action='\add_task' name="AddTask">
-    <p><b>${addnewtask}</b></p>
-    <table border="1">
-
-        <tr>
-            <td>${tasksender}</td>
-            <td>
-                <SELECT disabled required NAME="FLNamesSender">
+            <tr>
+                <td>${tasksender}</td>
+                <td>
+                    <SELECT disabled required NAME="FLNamesSender">
                         <OPTION value='${currentUser.id}'>
                             <c:out value='${currentUser.lasttname}'/>
                             <c:out value='${currentUser.firstname}'/>
                         </OPTION>
-                </SELECT>
-            </td>
-        </tr>
-        <tr>
-            <td>${tasktype}</td>
-            <td>
-                <SELECT required contenteditable NAME="taskType">
-                    <OPTION >Высадка</OPTION>
-                    <OPTION>Лечение</OPTION>
-                    <OPTION>Обработка</OPTION>
-                </SELECT>
+                    </SELECT>
+                </td>
+            </tr>
+            <tr>
+                <td>${tasktype}</td>
+                <td>
+                    <SELECT required contenteditable NAME="taskType">
+                        <OPTION>Высадка</OPTION>
+                        <OPTION>Лечение</OPTION>
+                        <OPTION>Обработка</OPTION>
+                    </SELECT>
 
-            </td>
-        </tr>
-        <tr>
-            <td>${tasktext}</td>
-            <td><input type="text" name="taskText"/></td>
-        </tr>
-        <tr>
-            <td>${recipient}</td>
-            <td><SELECT required NAME="FLNamesRecipient">
-                <c:forEach items="${users}" var="users">
-                    <OPTION value='${users.id}'>
-                        <c:out value='${users.lasttname}'/>
-                        <c:out value='${users.firstname}'/>
-                    </OPTION>
-                </c:forEach>
-            </SELECT>
-            </td>
-        </tr>
-    </table>
+                </td>
+            </tr>
+            <tr>
+                <td>${tasktext}</td>
+                <td><input type="text" name="taskText"/></td>
+            </tr>
+            <tr>
+                <td>${recipient}</td>
+                <td><SELECT required NAME="FLNamesRecipient">
+                    <c:forEach items="${users}" var="users">
+                        <OPTION value='${users.id}'>
+                            <c:out value='${users.lasttname}'/>
+                            <c:out value='${users.firstname}'/>
+                        </OPTION>
+                    </c:forEach>
+                </SELECT>
+                </td>
+            </tr>
+        </table>
+        <br>
+
+        <input type="hidden" name="action" value="insert"/>
+        <input type="submit" value='${done}'/>
+    </form>
+    <c:out value='${taskWasAdded}'/>
     <br>
 
-    <input type="hidden" name="action" value="insert"/>
-    <input type="submit" value='${done}'/>
-</form> <c:out value='${taskWasAdded}'/>
-<br>
-<form action="/tasks">
-    <input type="submit" value="${back}" />
-</form>
+    <form action="/tasks">
+        <input type="submit" value="${back}"/>
+    </form>
+</div>
 
 </body>
 </html>

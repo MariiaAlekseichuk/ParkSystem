@@ -5,3 +5,5 @@
 2015-11-21 23:21:57 ERROR DBConnection:42 - Ќе удалось выполнить SQL-запросINSERT INTO users (login,password,firstname,lastname,email) VALUES (?,?,?,?,?)
 2015-11-21 23:23:57 ERROR DBConnection:69 - Ќе удалось найти пользовател€ с указанными ‘»ќвј—яп≈“я или п≈“явј—я
 2015-11-21 23:24:39 ERROR DBConnection:69 - Ќе удалось найти пользовател€ с указанными ‘»ќЋесной»ван или ѕет€ѕетч
+2015-11-23 23:46:33 ERROR DBConnection:49 - Ќе удалось выполнить SQL-запросINSERT INTO users (login,password,firstname,lastname,email) VALUES (?,?,?,?,?)
+2015-11-23 23:47:07 ERROR DBConnection:49 - Ќе удалось выполнить SQL-запросINSERT INTO users (login,password,firstname,lastname,email) VALUES (?,?,?,?,?)

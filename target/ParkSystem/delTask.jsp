@@ -18,21 +18,21 @@
 
 
     <title>${deltask}</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
 
-<p><b>${deltaskquestion}</b></p>
+<h1 align="center"><p><b>${deltaskquestion}</b></p></h1>
 
+<div align="center">
+    <form method="POST" action='\delete_task' name="DelTask">
+        <input type="hidden" name="action" value="delete"/>
+        <td><input type="submit" value=${delbutton}></td>
+        <c:out value='${taskWasDeleted}'/>
+    </form>
+    <br>
 
-<form method="POST" action='\delete_task' name="DelTask">
-    <input type="hidden" name="action" value="delete"/>
-    <td><input type="submit" value=${delbutton}></td>
-    <c:out value='${taskWasDeleted}'/>
-</form>
-<br>
-
-<INPUT type=button value="${no}" onClick="history.back();">
-
+    <INPUT type=button value="${no}" onClick="history.back();">
+</div>
 </body>
 </html>

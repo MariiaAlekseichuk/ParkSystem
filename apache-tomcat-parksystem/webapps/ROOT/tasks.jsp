@@ -27,7 +27,7 @@
     <link rel="stylesheet" type="text/css" href="css/style.css" />
 </head>
 <body>
-<h1><c:out value="${yourtasks}"/></h1>
+<h1 align="center"><c:out value="${yourtasks}"/></h1>
 
 <div align="right">
 <form action="logout.jsp">

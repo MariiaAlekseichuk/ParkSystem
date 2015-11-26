@@ -54,10 +54,11 @@ public class UserServlet extends HttpServlet {
         String redirect = "addNewUser.jsp";
 
         response.setContentType("text/html");
+        request.setCharacterEncoding("utf-8");
 
         User user = new User();
-        user.setPassword(request.getParameter("login"));
-        user.setLogin(request.getParameter("password"));
+        user.setPassword(request.getParameter("password"));
+        user.setLogin(request.getParameter("login"));
         user.setFirstname(request.getParameter("firstName"));
         user.setLasttname(request.getParameter("lastName"));
         user.setEmail(request.getParameter("email"));

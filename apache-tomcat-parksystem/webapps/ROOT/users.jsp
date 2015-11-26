@@ -6,26 +6,27 @@
 
 <html>
 <head>
-  <fmt:setLocale value="${sessionScope.local}"/>
-  <fmt:setBundle basename="local" var="loc"/>
-  <fmt:message bundle="${loc}" key="local.usersinfo" var="usersinfo"></fmt:message >
+    <fmt:setLocale value="${sessionScope.local}"/>
+    <fmt:setBundle basename="local" var="loc"/>
+    <fmt:message bundle="${loc}" key="local.usersinfo" var="usersinfo"></fmt:message>
 
-  <title>${usersinfo}</title>
-  <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <h1 align="center"><title>${usersinfo}</title></h1>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
-<table border="1">
-  <tr>
-    <th>${usersinfo}</th>
-  </tr>
-  <c:forEach items="${users}" var="user">
-    <tr>
-      <td><c:out value='${user}' />
-      </td>
-    </tr>
-      </c:forEach>
-</table>
-
+<div align="center">
+    <table border="1">
+        <tr>
+            <th>${usersinfo}</th>
+        </tr>
+        <c:forEach items="${users}" var="user">
+            <tr>
+                <td><c:out value='${user}'/>
+                </td>
+            </tr>
+        </c:forEach>
+    </table>
+</div>
 </body>
 </html>
 

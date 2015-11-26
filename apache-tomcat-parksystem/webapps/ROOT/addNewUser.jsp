@@ -9,54 +9,58 @@
     <fmt:setBundle basename="local" var="loc"/>
 
     <fmt:message bundle="${loc}" key="local.registration" var="registration"></fmt:message>
-    <fmt:message bundle="${loc}" key="local.fn" var="fn"></fmt:message >
-    <fmt:message bundle="${loc}" key="local.ln" var="ln"></fmt:message >
-    <fmt:message bundle="${loc}" key="local.login" var="login"></fmt:message >
-    <fmt:message bundle="${loc}" key="local.password" var="password"></fmt:message >
-    <fmt:message bundle="${loc}" key="local.useremail" var="useremail"></fmt:message >
-    <fmt:message bundle="${loc}" key="local.done" var="done"></fmt:message >
+    <fmt:message bundle="${loc}" key="local.fn" var="fn"></fmt:message>
+    <fmt:message bundle="${loc}" key="local.ln" var="ln"></fmt:message>
+    <fmt:message bundle="${loc}" key="local.login" var="login"></fmt:message>
+    <fmt:message bundle="${loc}" key="local.password" var="password"></fmt:message>
+    <fmt:message bundle="${loc}" key="local.useremail" var="useremail"></fmt:message>
+    <fmt:message bundle="${loc}" key="local.done" var="done"></fmt:message>
+    <fmt:message bundle="${loc}" key="local.back" var="back"></fmt:message>
 
 
-    <title>${registration}</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <h1 align="center"><title>${registration}</title></h1>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
+<div align="center">
+    <form method="post" action='\addnewuser' name="frmAddUser">
+        <input type="hidden" name="action" value="insert"/>
 
-<form method="post" action='\addnewuser' name="frmAddUser">
-    <input type="hidden" name="action" value="insert"/>
+        <p><b>${registration}</b></p>
+        <table>
+            <tr>
+                <td><c:out value='${login}'/></td>
+                <td><input type="text" name="login" value=""/></td>
+            </tr>
+            <tr>
+            <tr>
+                <td><c:out value='${password}'/></td>
+                <td><input type="text" name="password" value=""/></td>
+            </tr>
+            <tr>
+                <td><c:out value='${fn}'/></td>
+                <td><input type="text" name="firstName" value=""/></td>
+            </tr>
+            <tr>
+                <td><c:out value='${ln}'/></td>
+                <td><input type="text" name="lastName"/></td>
+            </tr>
+            <tr>
+                <td><c:out value='${useremail}'/></td>
+                <td><input type="text" name="email"/></td>
+            </tr>
+        </table>
+        <br>
 
-    <p><b>${registration}</b></p>
-    <table>
-        <tr>
-            <td><c:out value='${login}'/></td>
-            <td><input type="text" name="login" value=""/></td>
-        </tr>
-        <tr>
-        <tr>
-            <td><c:out value='${password}'/></td>
-            <td><input type="text" name="password" value=""/></td>
-        </tr>
-        <tr>
-            <td><c:out value='${fn}'/></td>
-            <td><input type="text" name="firstName" value=""/></td>
-        </tr>
-        <tr>
-            <td><c:out value='${ln}'/></td>
-            <td><input type="text" name="lastName"/></td>
-        </tr>
-        <tr>
-            <td><c:out value='${useremail}'/></td>
-            <td><input type="text" name="email"/></td>
-        </tr>
-    </table>
-    <br>
+        <input type="hidden" name="action" value="update"/>
+        <input type="submit" value='${done}'/> <c:out value='${recordadded}'/>
+    </form>
+<br>
 
-    <input type="hidden" name="action" value="update"/>
-    <input type="submit" value='${done}'/> <c:out value='${recordadded}'/>
-</form>
-
-
-
+    <form action="/index">
+        <input type="submit" value="${back}">
+    </form>
+</div>
 
 
 </body>
